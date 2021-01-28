@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/euler/1/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Posts | Jasblog</title>
+  <title>Multiples of 3 and 5 | Jasblog</title>
 </head>
 
   <body>
@@ -184,7 +184,7 @@
       
       
       
-      <a href="/post/" aria-current="page">
+      <a href="/post/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -253,52 +253,24 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
-  
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post/hello/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Hello
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/org-spreadsheet/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-Spreadsheet
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+  <main id="main">
+    <h1>Multiples of 3 and 5</h1>
+    <pre><code class="language-emacs-lisp">(defun multiples-3|5 (n)
+  (cl-flet ((pred (x)
+              (or (= 0 (mod x 3)) (= 0 (mod x 5)))))
+    (let ((sum 0) (i 0))
+      (while (&lt; i n)
+        (if (pred i)
+            (cl-incf sum i))
+        (cl-incf i))
+      sum)))
+
+(multiples-3|5 1000)
+
+233168
+</code></pre>
+
+  </main>
 
           
             <footer role="contentinfo">

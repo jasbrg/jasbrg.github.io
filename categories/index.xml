@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Jasblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jan 2021 18:53:00 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jan 2021 17:51:10 -0600</lastBuildDate>
     
 	<atom:link href="https://jasbrg.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>euler</title>
+      <link>https://jasbrg.github.io/categories/euler/</link>
+      <pubDate>Thu, 28 Jan 2021 17:51:10 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/categories/euler/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>org</title>

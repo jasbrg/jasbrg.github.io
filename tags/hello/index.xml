@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hello on Jasblog</title>
+    <link>https://jasbrg.github.io/tags/hello/</link>
+    <description>Recent content in hello on Jasblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jan 2021 15:56:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://jasbrg.github.io/tags/hello/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>https://jasbrg.github.io/post/hello/</link>
+      <pubDate>Thu, 28 Jan 2021 15:56:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/hello/</guid>
+      <description>Coming to you from nearly-nine-hundred lines of Emacs-lisp and a pittance of CSS. Do you really need more? 1 In time I&amp;rsquo;ll accumulate more bits and pieces of customization and configuration to apply, better expressing myself through this site. As it stands now this little veneer suffices, it&amp;rsquo;s never really about what&amp;rsquo;s on the cover anyway, but how effective the cover is at appealing to those that may appreciate the content.</description>
+    </item>
+    
+  </channel>
+</rss>
