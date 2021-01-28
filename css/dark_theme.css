@@ -1,0 +1,25 @@
+html {
+    font-family: Input, sans-serif;
+}
+
+.intro-and-nav, .main-and-footer {
+    background-color: #101010;
+    color: #b9b9b9;
+}
+
+.pattern [aria-current] {
+    color: #101010;
+    background-color: #b9b9b9;
+}
+
+.logo img {
+    filter: invert(100%);
+    background-color: transparent;
+}
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color:#b9b9b9;
+
+}
