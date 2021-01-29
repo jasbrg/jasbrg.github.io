@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/euler/">
+  <link rel="canonical" href="/euler/problem3/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Eulers | Jasblog</title>
+  <title>Largest prime factor | Jasblog</title>
 </head>
 
   <body>
@@ -253,84 +253,50 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Eulers</h1>
-  
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/euler/problem4/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Largest palindrome product
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem3/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Largest prime factor
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem2/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Even Fibonacci numbers
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem1/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Multiples of 3 and 5
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+  <main id="main">
+    <h1>Largest prime factor</h1>
+    <blockquote>
+<p>The prime factors of 13195 are 5, 7, 13 and 29.</p>
+<p>What is the largest prime factor of the number 600851475143 ?</p>
+</blockquote>
+<p>I quickly realized a limitation of Elisp is its hacky early return from
+functions being based around <a href="https://www.gnu.org/software/emacs/manual/html%5Fnode/elisp/Catch-and-Throw.html">catch and throw</a>. It is idiomatic, but it sounds
+kind of ugly. We&rsquo;re saved by the <a href="https://www.gnu.org/software/emacs/manual/html%5Fnode/cl/Loop-Facility.html">Loop Facility</a> though, letting us write
+iterative programs, yay. It&rsquo;s stateful, but whatever, the approach is sound.</p>
+<p>Here I separate the functionality more than in the previous two, and the logic
+is a bit cleaner because of it. The approach used to find the largest prime is
+simply:</p>
+<ol>
+<li>is the number prime? then is is the largest prime factor</li>
+<li>divide by some prime number, start with the smallest (2)</li>
+<li>if you cannot divide, find the next prime number and use that</li>
+<li>repeat</li>
+</ol>
+<p>Note that the steps above is virtually a verbatim transcription of
+<code>largest-prime-factor</code></p>
+<pre><code class="language-emacs-lisp">;;; A naive approach
+(defun primep (n)
+  (cl-loop for i from 2 to (sqrt n)
+           when (= 0 (mod n i)) return nil
+           finally return t))
+
+(defun next-prime (n)
+  (cl-loop with m = n do (cl-incf m)
+           when (primep m) return m))
+
+(defun largest-prime-factor (n)
+  (cl-loop with m = n
+           with f = 2
+           if (primep m) return m end
+           if (= 0 (mod m f)) do (setq m (/ m f))
+           else do (setq f (next-prime f)) end))
+
+(largest-prime-factor 600851475143)
+
+6857
+</code></pre>
+
+  </main>
 
           
             <footer role="contentinfo">
