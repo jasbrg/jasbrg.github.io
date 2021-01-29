@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Multiples of 3 and 5</title>
-      <link>https://jasbrg.github.io/euler/1/</link>
-      <pubDate>Thu, 28 Jan 2021 17:49:03 -0600</pubDate>
+      <title>Euler Index</title>
+      <link>https://jasbrg.github.io/euler/</link>
+      <pubDate>Thu, 28 Jan 2021 17:58:47 -0600</pubDate>
       
-      <guid>https://jasbrg.github.io/euler/1/</guid>
-      <description>(defun multiples-3|5 (n) (cl-flet ((pred (x) (or (= 0 (mod x 3)) (= 0 (mod x 5))))) (let ((sum 0) (i 0)) (while (&amp;lt; i n) (if (pred i) (cl-incf sum i)) (cl-incf i)) sum))) (multiples-3|5 1000) 233168  </description>
+      <guid>https://jasbrg.github.io/euler/</guid>
+      <description>Test of subtree index. The text isn&amp;rsquo;t being output, but otherwise it behaves as expected.</description>
     </item>
     
     <item>
