@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/categories/">
+  <link rel="canonical" href="/euler/problem7/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Categories | Jasblog</title>
+  <title>10001st prime | Jasblog</title>
 </head>
 
   <body>
@@ -210,7 +210,7 @@
       
       
       
-      <a href="/categories/" aria-current="page">
+      <a href="/categories/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -254,32 +254,24 @@
         <div>
           
   <main id="main">
-    <h1>Categories</h1>
-    <ul class="patterns-list">
-      
-        <li>
-          <h2>
-            <a href="/categories/euler/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (7) euler
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/categories/org/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) org
-            </a>
-          </h2>
-        </li>
-      
-    </ul>
+    <h1>10001st prime</h1>
+    <blockquote>
+<p>By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.</p>
+<p>What is the 10 001st prime number?</p>
+</blockquote>
+<p>This one is also pretty straight-forward, with <code>next-prime</code> we just count up!</p>
+<pre><code class="language-emacs-lisp">(defun nth-prime (n)
+  (cl-loop
+   with prime = 2
+   for i from 1 below n
+   do (setq prime (next-prime prime))
+   finally return prime))
+
+(nth-prime 10001)
+
+104743
+</code></pre>
+
   </main>
 
           

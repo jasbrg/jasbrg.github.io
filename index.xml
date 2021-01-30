@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>10001st prime</title>
+      <link>https://jasbrg.github.io/euler/problem7/</link>
+      <pubDate>Fri, 29 Jan 2021 21:16:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/euler/problem7/</guid>
+      <description> By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10 001st prime number?
+ This one is also pretty straight-forward, with next-prime we just count up!
+(defun nth-prime (n) (cl-loop with prime = 2 for i from 1 below n do (setq prime (next-prime prime)) finally return prime)) (nth-prime 10001) 104743  </description>
+    </item>
+    
+    <item>
       <title>Sum square difference</title>
       <link>https://jasbrg.github.io/euler/problem6/</link>
       <pubDate>Fri, 29 Jan 2021 21:08:00 -0600</pubDate>
