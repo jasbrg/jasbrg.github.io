@@ -302,14 +302,16 @@ function.</p>
      finally return hash)))
 
 (defun factors-multiset-&gt;int (ms)
-  (-product (cl-mapcar 'math-pow
-                       (hash-table-keys ms)
-                       (hash-table-values ms))))
+  (-product
+   (cl-mapcar 'math-pow
+              (hash-table-keys ms)
+              (hash-table-values ms))))
 
 (defun smallest-multiple (below)
   (factors-multiset-&gt;int
    (-reduce 'multiset-union
-            (-map 'int-&gt;factors-multiset (-iota below 1)))))
+            (-map 'int-&gt;factors-multiset
+                  (-iota below 1)))))
 
 (smallest-multiple 20)
 
