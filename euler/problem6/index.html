@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/categories/euler/">
+  <link rel="canonical" href="/euler/problem6/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>euler | Jasblog</title>
+  <title>Sum square difference | Jasblog</title>
 </head>
 
   <body>
@@ -253,116 +253,35 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>euler</h1>
-  
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/euler/problem6/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Sum square difference
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem5/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Smallest multiple
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem4/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Largest palindrome product
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem3/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Largest prime factor
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem2/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Even Fibonacci numbers
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/euler/problem1/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Multiples of 3 and 5
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+  <main id="main">
+    <h1>Sum square difference</h1>
+    <blockquote>
+<p>The sum of the squares of the first ten natural numbers is,</p>
+<p><code>1^2 + 2^2 + ... + 10^2 = 385</code></p>
+<p>The square of the sum of the first ten natural numbers is,</p>
+<p><code>(1 + 2 + ... + 10)^2 = 55^2 = 3025</code></p>
+<p>Hence the difference between the sum of the squares of the first ten natural
+numbers and the square of the sum is <code>3025 - 385 = 2640</code>.</p>
+<p>Find the difference between the sum of the squares of the first one hundred
+natural numbers and the square of the sum.</p>
+</blockquote>
+<p>I was going to turn in after the last one&hellip; but I read this and saw the one
+liner. I believe I recall writing a sum-of-squares when reading SICP.</p>
+<pre><code class="language-emacs-lisp">(defun sum-of-squares (n)
+  (apply '+ (-map (lambda (x) (math-pow x 2)) (-iota n 1))))
+
+(defun square-of-sums (n)
+  (math-pow (apply '+ (-iota n 1)) 2))
+
+(defun sum-square-difference (n)
+  (- (square-of-sums n) (sum-of-squares n)))
+
+(sum-square-difference 100)
+
+25164150
+</code></pre>
+
+  </main>
 
           
             <footer role="contentinfo">
