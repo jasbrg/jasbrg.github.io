@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/categories/">
+  <link rel="canonical" href="/euler/problem5/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Categories | Jasblog</title>
+  <title>Smallest multiple | Jasblog</title>
 </head>
 
   <body>
@@ -210,7 +210,7 @@
       
       
       
-      <a href="/categories/" aria-current="page">
+      <a href="/categories/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -254,32 +254,76 @@
         <div>
           
   <main id="main">
-    <h1>Categories</h1>
-    <ul class="patterns-list">
-      
-        <li>
-          <h2>
-            <a href="/categories/euler/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (5) euler
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/categories/org/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) org
-            </a>
-          </h2>
-        </li>
-      
-    </ul>
+    <h1>Smallest multiple</h1>
+    <blockquote>
+<p>2520 is the smallest number that can be divided by each of the numbers from 1 to
+10 without any remainder.</p>
+<p>What is the smallest positive number that is evenly divisible by all of the
+numbers from 1 to 20?</p>
+</blockquote>
+<p>There&rsquo;s more plumbing in the form of an abstract data-type which uses a
+modification of <a href="/euler/problem3/">Largest prime factor</a> to find all primes of a given numbers
+factors. Using this information we can construct a <a href="https://en.wikipedia.org/wiki/Multiset">multiset</a>,<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> here the key
+is a prime, and the value is its power. This makes reconstructing the integer
+pretty easy, and finding the primes is probably the most costly thing, though
+<code>next-prime</code> is called infrequently. This representation has a nice property
+that the union of multisets results in the least common multiple. So all the
+work to be done is just encoding the abstract data type, and the necessary
+function.</p>
+<pre><code class="language-emacs-lisp">(defun collect-prime-factors (n)
+  (cl-loop with m = n
+           with f = 2
+           with acc = '()
+           if (primep m) return (cons m acc) end
+           if (= 0 (mod m f))
+              do (setq m (/ m f))
+              and collect f into acc
+           else do (setq f (next-prime f)) end))
+
+(defun count-unique (list)
+  (cl-loop
+   with hash = (make-hash-table)
+   for elt in list
+   do (cl-incf (gethash elt hash 0))
+   finally return hash))
+
+(defun int-&gt;factors-multiset (n)
+  (count-unique (collect-prime-factors n)))
+
+(defun multiset-union (ms1 ms2)
+  (let ((all-keys (-uniq (append (hash-table-keys ms1)
+                                 (hash-table-keys ms2)))))
+    (cl-loop
+     with hash = (make-hash-table)
+     for k in all-keys
+     do (puthash k (max (gethash k ms1 most-negative-fixnum)
+                        (gethash k ms2 most-negative-fixnum))
+                 hash)
+     finally return hash)))
+
+(defun factors-multiset-&gt;int (ms)
+  (-product (cl-mapcar 'math-pow
+                       (hash-table-keys ms)
+                       (hash-table-values ms))))
+
+(defun smallest-multiple (below)
+  (factors-multiset-&gt;int
+   (-reduce 'multiset-union
+            (-map 'int-&gt;factors-multiset (-iota below 1)))))
+
+(smallest-multiple 20)
+
+232792560
+</code></pre>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Also known as, getting Emacs on the <a href="https://clojuredocs.org/clojure.core/frequencies">frequency</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
   </main>
 
           

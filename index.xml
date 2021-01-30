@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Smallest multiple</title>
+      <link>https://jasbrg.github.io/euler/problem5/</link>
+      <pubDate>Fri, 29 Jan 2021 20:27:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/euler/problem5/</guid>
+      <description>2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+ There&amp;rsquo;s more plumbing in the form of an abstract data-type which uses a modification of Largest prime factor to find all primes of a given numbers factors. Using this information we can construct a multiset,1 here the key is a prime, and the value is its power.</description>
+    </item>
+    
+    <item>
       <title>Largest palindrome product</title>
       <link>https://jasbrg.github.io/euler/problem4/</link>
       <pubDate>Fri, 29 Jan 2021 12:10:00 -0600</pubDate>
