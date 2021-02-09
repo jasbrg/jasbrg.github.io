@@ -6,10 +6,21 @@
     <description>Recent content in Eulers on Jasblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 21:19:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 09:43:00 -0600</lastBuildDate>
     
 	<atom:link href="https://jasbrg.github.io/euler/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lattice paths</title>
+      <link>https://jasbrg.github.io/euler/problem15/</link>
+      <pubDate>Mon, 01 Feb 2021 09:43:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/euler/problem15/</guid>
+      <description> Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+How many such routes are there through a 20×20 grid?
+ </description>
+    </item>
     
     <item>
       <title>Longest Collatz sequence</title>

@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>Gaunt Drift</title>
+      <link>https://jasbrg.github.io/post/gaunt-drift/</link>
+      <pubDate>Tue, 09 Feb 2021 08:45:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/gaunt-drift/</guid>
+      <description>The days of winter stretch on long through the year,
+fir soaking up the sun shone on the dells
+though less now as we approach solstice.
+The snow fell heavy last week,
+dressing every branch and bough
+Hugging the curves of the world, every curve in sight
+Now its delicate undriven face falls away with the wind
+its gaunt drifts revealing bones of ice</description>
+    </item>
+    
+    <item>
+      <title>Lattice paths</title>
+      <link>https://jasbrg.github.io/euler/problem15/</link>
+      <pubDate>Mon, 01 Feb 2021 09:43:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/euler/problem15/</guid>
+      <description> Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+How many such routes are there through a 20×20 grid?
+ </description>
+    </item>
+    
+    <item>
       <title>Longest Collatz sequence</title>
       <link>https://jasbrg.github.io/euler/problem14/</link>
       <pubDate>Sun, 31 Jan 2021 21:19:00 -0600</pubDate>
@@ -207,6 +234,16 @@ I appreciate poetry, symbolic art, and folk music. The ideal piece in my opinion
       <guid>https://jasbrg.github.io/post/org-spreadsheet/</guid>
       <description>Intro This is getting pretty interesting. The spreadsheet functionality of org-tables is more impressive than I would have guessed. For small example here&amp;rsquo;s a snapshot of a diet.org file I&amp;rsquo;ve been working on.
 * Food Lookup Table #+TBLNAME: nutrition | name | cal/g | fat%g | carb%g | prot%g | |----------------+-------+-------+--------+--------| | corn beef hash | 1.64 | 10 | 10 | 7 |  * Food Log #+TBLNAME: diet | timestamp | name | grams | cal/g | calories | |------------------------+----------------+-------+-------+----------| | [2021-01-15 Fri 13:35] | corn beef hash | 198 | 1.</description>
+    </item>
+    
+    <item>
+      <title>Software Developer</title>
+      <link>https://jasbrg.github.io/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jasbrg.github.io/cv/</guid>
+      <description>jasbrg@gmail.com jasbrg.github.io jasbrg  Work Experience Teaching Assistant Vrije Universiteit Amsterdam, NL 2018 -- 2020  Variously facilitated labs, graded submissions, proctored exams, and covered exercises for the classes:
+ Software Testing Introduction to Programming - Python Advanced Programming Language Concepts Data Structures and Algorithms  Fullstack Developer Misix Inc. Milwaukee, WI, USA 2016 -- 2017   Prototype Golang data-visualization interpreter backend Maintain customer auction recommendation preferences list Build Wordpress websites for business clients  Research Datacenter Assistant University of Wisconsin Milwaukee, WI, USA 2014 -- 2016   Optimize researchers&amp;rsquo; FORTRAN simulations Respond to hardware failures Write Puppet modules and FreeBSD ports  Education MSc.</description>
     </item>
     
   </channel>
