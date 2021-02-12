@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jasblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 08:45:00 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 11 Feb 2021 20:22:00 -0600</lastBuildDate>
     
 	<atom:link href="https://jasbrg.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-bibliography</title>
+      <link>https://jasbrg.github.io/post/org-bib/</link>
+      <pubDate>Thu, 11 Feb 2021 20:22:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/org-bib/</guid>
+      <description>There are a few solutions for tracking bibliographies, the most prominent is Zotero but of course I&amp;rsquo;d like something to integrate into Emacs and Org mode. Luckily this problem has seen some man-hours, there is helm-bibtex and org-ref, and ebib, and pals. The former two are what I&amp;rsquo;ll use, I already use helm (half in preparation for using helm-bibtex) but I do wonder how it works all over. It&amp;rsquo;s already installed so let&amp;rsquo;s see how it works through ox-hugo: turing50:comput.</description>
+    </item>
     
     <item>
       <title>Gaunt Drift</title>

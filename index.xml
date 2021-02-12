@@ -12,6 +12,28 @@
     
     
     <item>
+      <title>Org-bibliography</title>
+      <link>https://jasbrg.github.io/post/org-bib/</link>
+      <pubDate>Thu, 11 Feb 2021 20:22:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/org-bib/</guid>
+      <description>There are a few solutions for tracking bibliographies, the most prominent is Zotero but of course I&amp;rsquo;d like something to integrate into Emacs and Org mode. Luckily this problem has seen some man-hours, there is helm-bibtex and org-ref, and ebib, and pals. The former two are what I&amp;rsquo;ll use, I already use helm (half in preparation for using helm-bibtex) but I do wonder how it works all over. It&amp;rsquo;s already installed so let&amp;rsquo;s see how it works through ox-hugo: turing50:comput.</description>
+    </item>
+    
+    <item>
+      <title>Two Sum</title>
+      <link>https://jasbrg.github.io/leetcode/two-sum/</link>
+      <pubDate>Wed, 10 Feb 2021 12:39:03 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/leetcode/two-sum/</guid>
+      <description>Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Example 1:
+Input: nums = [2, 7, 11, 15], target = 9 Output: [0, 1] Output: Because nums[0] + nums[1] == 9, we return [0, 1]  Solution package main import &amp;quot;fmt&amp;quot; func twoSum(nums []int, target int) []int { var comps = make(map[int]int) // key is the complement, val is assoc index for i := range nums { var comp = target - nums[i]	// what should the complement be?</description>
+    </item>
+    
+    <item>
       <title>Gaunt Drift</title>
       <link>https://jasbrg.github.io/post/gaunt-drift/</link>
       <pubDate>Tue, 09 Feb 2021 08:45:00 -0600</pubDate>

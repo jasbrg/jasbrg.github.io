@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jasbrg.github.io/post/gaunt-drift/</loc>
-    <lastmod>2021-02-09T08:45:52-06:00</lastmod>
+    <loc>https://jasbrg.github.io/post/org-bib/</loc>
+    <lastmod>2021-02-11T21:31:32-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://jasbrg.github.io/post/</loc>
+    <lastmod>2021-02-11T21:31:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/leetcode/</loc>
+    <lastmod>2021-02-10T12:39:03-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/leetcode/two-sum/</loc>
+    <lastmod>2021-02-10T12:39:03-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/post/gaunt-drift/</loc>
     <lastmod>2021-02-09T08:45:52-06:00</lastmod>
   </url>
   

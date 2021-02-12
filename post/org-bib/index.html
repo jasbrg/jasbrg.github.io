@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post/org-bib/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Posts | Jasblog</title>
+  <title>Org-bibliography | Jasblog</title>
 </head>
 
   <body>
@@ -253,84 +253,86 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Org-bibliography
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>February 11, 2021
+      
+        
+          <br>
+          <strong>Last updated: </strong>February 11, 2021
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    
+
+    <p>There are a few solutions for tracking bibliographies, the most prominent is
+<a href="https://www.zotero.org/">Zotero</a> but of course I&rsquo;d like something to integrate into Emacs and Org mode.
+Luckily this problem has seen some man-hours, there is helm-bibtex and org-ref,
+and ebib, and pals. The former two are what I&rsquo;ll use, I already use helm (half
+in preparation for using helm-bibtex) but I do wonder how it works all over.
+It&rsquo;s already installed so let&rsquo;s see how it works through ox-hugo:
+<sup id="02b96cb55d8fa750301cd9c817c852ff"><a href="#turing50:comput" title="Turing, Computing machinery and intelligence, {Mind}, v(236), 433-460 (1950).">turing50:comput</a></sup>.</p>
+<p>Not too bad, though there are a few things here coupled, more than I&rsquo;d like but
+hey. The literal text is the name of the PDF in my library folder, which was
+governed by some <code>biblio-</code> lookup. There&rsquo;s a better discipline for naming these
+things isn&rsquo;t there&hellip;</p>
+<p>The setup is simple, just a couple of packages and a few variables. I repeat
+myself a bit here, separating this out may be premature abstraction. In either
+case I could deign to choose one set as the source of truth, since their schema
+is the same</p>
+<pre><code class="language-emacs-lisp">(use-package helm-bibtex
+  :straight t
+  :bind ((&quot;C-c m b&quot; . 'helm-bibtex))
+  :config
+  (setq bibtex-dialect 'biblatex
+        bibtex-completion-bibliography '(&quot;~/org/tex/refs.bib&quot;)
+        bibtex-completion-notes-path &quot;~/org/tex/notes.org&quot;
+        bibtex-completion-library-path '(&quot;~/org/lib/&quot;)))
+(use-package org-ref
+  :straight t
+  :config
+  (setq reftex-default-bibliography '(&quot;~/org/tex/refs.bib&quot;)
+        org-ref-default-bibliography '(&quot;~/org/tex/refs.bib&quot;)
+        org-ref-bibliography-notes &quot;~/org/tex/notes.org&quot;
+        org-ref-pdf-directory &quot;~/org/lib&quot;))
+</code></pre>
+<p>I started using <code>C-c m</code> as a prefix for &ldquo;media&rdquo;. Originally it was prefixed
+<code>notmuch</code> and <code>helm-notmuch</code>, and before that <code>mu4e</code> but mnemonically &ldquo;mail&rdquo;.
+&ldquo;Media&rdquo; now because it prefixes <code>emms</code> as well, and when I type <code>C-c m b</code> I
+think to myself &ldquo;media books&rdquo;.</p>
+<p>I&rsquo;m aware of org-roam-bibtex too, maybe I should check it out because I do like
+the quick note taking of org-roam&hellip; quickly checked it out, interesting but I
+may yet prefer to use the notes function under <code>helm-bibtex</code>, I&rsquo;ll try that
+first.  The important thing is now I&rsquo;ve got it working through ox-pdf! yay.</p>
+<p>There are just a couple of lines to include:</p>
+<pre><code class="language-text">bibliography:tex/refs.bib
+bibliographystyle:plain
+</code></pre>
+<p>I think I&rsquo;ll refactor my PDF names now.</p>
+<h1 id="bibliography">Bibliography</h1>
+<p><a id="turing50:comput"></a>[turing50:comput] Turing, Computing machinery and intelligence, <i>Mind</i>, <b>LIX(236)</b>, 433-460 (1950). <a href="https://academic.oup.com/mind/article/LIX/236/433/986238">link</a>. <a href="http://dx.doi.org/10.1093/mind/LIX.236.433">doi</a>. <a href="#02b96cb55d8fa750301cd9c817c852ff">↩</a></p>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post/org-bib/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-bibliography
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/gaunt-drift/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Gaunt Drift
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/hello/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Hello
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/org-spreadsheet/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-Spreadsheet
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">

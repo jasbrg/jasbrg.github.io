@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/leetcode/two-sum/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Posts | Jasblog</title>
+  <title>Two Sum | Jasblog</title>
 </head>
 
   <body>
@@ -184,7 +184,7 @@
       
       
       
-      <a href="/post/" aria-current="page">
+      <a href="/post/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -253,84 +253,50 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
-  
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post/org-bib/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-bibliography
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/gaunt-drift/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Gaunt Drift
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/hello/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Hello
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/org-spreadsheet/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-Spreadsheet
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+  <main id="main">
+    <h1>Two Sum</h1>
+    <h2 id="problem">Problem</h2>
+<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of
+the two numbers such that they add up to</em> <code>target</code>.</p>
+<p>You may assume that each input would have <strong>exactly one solution</strong>, and you may
+not use the <em>same</em> element twice.</p>
+<p>You can return the answer in any order.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="language-text">Input: nums = [2, 7, 11, 15], target = 9
+Output: [0, 1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1]
+</code></pre>
+<h2 id="solution">Solution</h2>
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+func twoSum(nums []int, target int) []int {
+    var comps = make(map[int]int) // key is the complement, val is assoc index
+    for i := range nums {
+        var comp = target - nums[i]		 // what should the complement be?
+        if j, ok := comps[nums[i]]; ok { // have i already seen the complement?
+            return []int{j, i}			 // yes? we're done
+        }
+        comps[comp] = i			// no? record the complement
+    }
+    return []int{}
+}
+
+func main() {
+    var input = []int{2,7,11,15}
+    var target = 9
+    fmt.Println(twoSum(input, target))
+}
+</code></pre>
+<h2 id="result">Result</h2>
+<blockquote>
+<p>Runtime: 4 ms, faster than 92.58% of Go online submissions for Two Sum.
+Memory Usage: 3.2 MB, less than 99.92% of Go online submissions for Two Sum.</p>
+</blockquote>
+<p>Three nines for memory, ni{,ne}ce.</p>
+
+  </main>
 
           
             <footer role="contentinfo">
