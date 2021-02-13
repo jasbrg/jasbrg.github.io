@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jasbrg.github.io/categories/</loc>
+    <lastmod>2021-02-13T10:46:57-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/categories/org/</loc>
+    <lastmod>2021-02-13T10:46:57-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jasbrg.github.io/post/org-bib/</loc>
-    <lastmod>2021-02-13T10:42:54-06:00</lastmod>
+    <lastmod>2021-02-13T10:46:57-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://jasbrg.github.io/post/</loc>
-    <lastmod>2021-02-13T10:42:54-06:00</lastmod>
+    <lastmod>2021-02-13T10:46:57-06:00</lastmod>
   </url>
   
   <url>
@@ -25,11 +35,6 @@
   <url>
     <loc>https://jasbrg.github.io/post/gaunt-drift/</loc>
     <lastmod>2021-02-09T08:45:52-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/categories/</loc>
-    <lastmod>2021-02-01T09:42:25-06:00</lastmod>
   </url>
   
   <url>
@@ -134,11 +139,6 @@
   
   <url>
     <loc>https://jasbrg.github.io/</loc>
-    <lastmod>2021-01-28T08:54:11-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/categories/org/</loc>
     <lastmod>2021-01-28T08:54:11-06:00</lastmod>
   </url>
   
