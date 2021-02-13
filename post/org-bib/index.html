@@ -317,12 +317,19 @@ demonstration I&rsquo;ll have proper DRY discipline:</p>
         '(&quot;latexmk -shell-escape -bibtex -f -pdf %f&quot;)))
 </code></pre>
 <p>The only necessary point of entry for everything is <code>C-c m b</code> from which the
-helm interface gives access to any useful bibliography functions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+helm interface gives access to any useful bibliography functions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> For
+example, here in the org-mode file I use to manage this site, I press <code>C-c m b</code>,
+type &ldquo;Turing&rdquo; and press enter the result is the string <code>cite:turing50:comput</code>
+gets inserted and later interpreted into: <sup id="02b96cb55d8fa750301cd9c817c852ff"><a href="#turing50:comput" title="Turing, Computing machinery and intelligence, {Mind}, v(236), 433-460 (1950).">turing50:comput</a></sup>. Or instead of
+pressing enter I can choose one of the eleven other actions which include
+browsing the DOI, opening the PDF, attaching notes, or attaching the PDF to an
+email.</p>
 <p>I&rsquo;m aware of org-roam-bibtex too, maybe I should check it out because I do like
 the quick note taking of org-roam&hellip; interesting but I may yet prefer to use the
 notes function under <code>helm-bibtex</code>, I&rsquo;ll try that first. The important thing is
 now I&rsquo;ve got it working through ox-pdf! yay.</p>
-<p>For that there are just a couple of lines to include for boilerplate:</p>
+<p>For that there are just a couple of lines to include to place and populate the
+bibliography:</p>
 <pre><code class="language-text">bibliography:tex/refs.bib
 bibliographystyle:plain
 </code></pre>
