@@ -268,7 +268,7 @@
       
         
           <br>
-          <strong>Last updated: </strong>February 11, 2021
+          <strong>Last updated: </strong>February 13, 2021
         
       
     </div>
@@ -290,43 +290,56 @@ It&rsquo;s already installed so let&rsquo;s see how it works through ox-hugo:
 <sup id="02b96cb55d8fa750301cd9c817c852ff"><a href="#turing50:comput" title="Turing, Computing machinery and intelligence, {Mind}, v(236), 433-460 (1950).">turing50:comput</a></sup>.</p>
 <p>Not too bad, though there are a few things here coupled, more than I&rsquo;d like but
 hey. The literal text is the name of the PDF in my library folder, which was
-governed by some <code>biblio-</code> lookup. There&rsquo;s a better discipline for naming these
+governed by the <code>biblio-lookup</code>. There&rsquo;s a better discipline for naming these
 things isn&rsquo;t there&hellip;</p>
-<p>The setup is simple, just a couple of packages and a few variables. I repeat
-myself a bit here, separating this out may be premature abstraction. In either
-case I could deign to choose one set as the source of truth, since their schema
-is the same</p>
-<pre><code class="language-emacs-lisp">(use-package helm-bibtex
+<p>The setup is simple, just a couple of packages and a few variables. Mostly for
+demonstration I&rsquo;ll have proper DRY discipline:</p>
+<pre><code class="language-emacs-lisp">(defvar bibliography-file &quot;~/org/tex/refs.bib&quot;)
+(defvar library-directory &quot;~/org/lib/&quot;)
+(defvar research-notes-file &quot;~/org/tex/notes.org&quot;)
+
+(use-package helm-bibtex
   :straight t
   :bind ((&quot;C-c m b&quot; . 'helm-bibtex))
   :config
   (setq bibtex-dialect 'biblatex
-        bibtex-completion-bibliography '(&quot;~/org/tex/refs.bib&quot;)
-        bibtex-completion-notes-path &quot;~/org/tex/notes.org&quot;
-        bibtex-completion-library-path '(&quot;~/org/lib/&quot;)))
+        bibtex-completion-bibliography (list bibliography-file)
+        bibtex-completion-notes-path research-notes-file
+        bibtex-completion-library-path (list library-directory)))
 (use-package org-ref
   :straight t
   :config
-  (setq reftex-default-bibliography '(&quot;~/org/tex/refs.bib&quot;)
-        org-ref-default-bibliography '(&quot;~/org/tex/refs.bib&quot;)
-        org-ref-bibliography-notes &quot;~/org/tex/notes.org&quot;
-        org-ref-pdf-directory &quot;~/org/lib&quot;))
+  (setq reftex-default-bibliography (list bibliography-file)
+        org-ref-default-bibliography (list bibliography-file)
+        org-ref-bibliography-notes research-notes-file
+        org-ref-pdf-directory library-directory
+        org-latex-pdf-process
+        '(&quot;latexmk -shell-escape -bibtex -f -pdf %f&quot;)))
 </code></pre>
-<p>I started using <code>C-c m</code> as a prefix for &ldquo;media&rdquo;. Originally it was prefixed
-<code>notmuch</code> and <code>helm-notmuch</code>, and before that <code>mu4e</code> but mnemonically &ldquo;mail&rdquo;.
-&ldquo;Media&rdquo; now because it prefixes <code>emms</code> as well, and when I type <code>C-c m b</code> I
-think to myself &ldquo;media books&rdquo;.</p>
+<p>The only necessary point of entry for everything is <code>C-c m b</code> from which the
+helm interface gives access to any useful bibliography functions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>I&rsquo;m aware of org-roam-bibtex too, maybe I should check it out because I do like
-the quick note taking of org-roam&hellip; quickly checked it out, interesting but I
-may yet prefer to use the notes function under <code>helm-bibtex</code>, I&rsquo;ll try that
-first.  The important thing is now I&rsquo;ve got it working through ox-pdf! yay.</p>
-<p>There are just a couple of lines to include:</p>
+the quick note taking of org-roam&hellip; interesting but I may yet prefer to use the
+notes function under <code>helm-bibtex</code>, I&rsquo;ll try that first. The important thing is
+now I&rsquo;ve got it working through ox-pdf! yay.</p>
+<p>For that there are just a couple of lines to include for boilerplate:</p>
 <pre><code class="language-text">bibliography:tex/refs.bib
 bibliographystyle:plain
 </code></pre>
-<p>I think I&rsquo;ll refactor my PDF names now.</p>
+<p>I think I&rsquo;ll refactor my PDF names now.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <h1 id="bibliography">Bibliography</h1>
 <p><a id="turing50:comput"></a>[turing50:comput] Turing, Computing machinery and intelligence, <i>Mind</i>, <b>LIX(236)</b>, 433-460 (1950). <a href="https://academic.oup.com/mind/article/LIX/236/433/986238">link</a>. <a href="http://dx.doi.org/10.1093/mind/LIX.236.433">doi</a>. <a href="#02b96cb55d8fa750301cd9c817c852ff">↩</a></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I started using <code>C-c m</code> as a prefix for &ldquo;media&rdquo;. Originally it was prefixed <code>notmuch</code> and <code>helm-notmuch</code>, and before that <code>mu4e</code> but mnemonically &ldquo;mail&rdquo;. &ldquo;Media&rdquo; now because it prefixes <code>emms</code> as well. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Note the use of the relative path name. Proper discipline would probably be to make a snippet to output those two lines with an absolute path. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
   </main>
   <div id="disqus-container">
