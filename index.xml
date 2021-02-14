@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Add Two Numbers</title>
+      <link>https://jasbrg.github.io/leetcode/add-two-numbers/</link>
+      <pubDate>Sat, 13 Feb 2021 19:14:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/leetcode/add-two-numbers/</guid>
+      <description>Problem You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+Solution package main import &amp;quot;fmt&amp;quot; type ListNode struct { Val int Next *ListNode } func listToNumber(l *ListNode) int { var digitPlace = 1 var num = 0 for l !</description>
+    </item>
+    
+    <item>
       <title>Org-bibliography</title>
       <link>https://jasbrg.github.io/post/org-bib/</link>
       <pubDate>Thu, 11 Feb 2021 20:22:00 -0600</pubDate>

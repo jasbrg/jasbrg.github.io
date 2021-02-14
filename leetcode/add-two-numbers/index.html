@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.69.0" />
-  <link rel="canonical" href="/categories/">
+  <link rel="canonical" href="/leetcode/add-two-numbers/">
 
   
 
@@ -37,7 +37,7 @@
 
   
   
-  <title>Categories | Jasblog</title>
+  <title>Add Two Numbers | Jasblog</title>
 </head>
 
   <body>
@@ -210,7 +210,7 @@
       
       
       
-      <a href="/categories/" aria-current="page">
+      <a href="/categories/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -254,43 +254,72 @@
         <div>
           
   <main id="main">
-    <h1>Categories</h1>
-    <ul class="patterns-list">
-      
-        <li>
-          <h2>
-            <a href="/categories/euler/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (14) euler
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/categories/leet/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) leet
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/categories/org/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (2) org
-            </a>
-          </h2>
-        </li>
-      
-    </ul>
+    <h1>Add Two Numbers</h1>
+    <h2 id="problem">Problem</h2>
+<p>You are given two <strong>non-empty</strong> linked lists representing two non-negative
+integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes
+contains a single digit. Add the two numbers and return the sum as a linked
+list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the
+number 0 itself.</p>
+<h2 id="solution">Solution</h2>
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
+
+func listToNumber(l *ListNode) int {
+    var digitPlace = 1
+    var num = 0
+    for l != nil {
+        num = num + l.Val * digitPlace
+        digitPlace = digitPlace * 10
+        l = l.Next
+    }
+    return num
+}
+
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+    var node = &amp;ListNode{Val: 0, Next: nil}
+    var listAddr, old = node, node
+    var left, right = l1, l2
+
+    for left != nil || right != nil {
+        if left != nil {
+            node.Val += left.Val
+            left = left.Next
+        }
+        if right != nil {
+            node.Val += right.Val
+            right = right.Next
+        }
+        node.Next = &amp;ListNode{Val: node.Val / 10, Next: nil}
+        node.Val = node.Val % 10
+        old = node
+        node = node.Next
+    }
+    if node.Val == 0 {
+        old.Next = nil
+    }
+    return listAddr
+}
+
+func main() {
+    var l1 = &amp;ListNode{Val: 2, Next: &amp;ListNode{Val: 4, Next: &amp;ListNode{Val: 3, Next: nil}}}
+    var l2 = &amp;ListNode{Val: 2, Next: &amp;ListNode{Val: 4, Next: &amp;ListNode{Val: 7, Next: nil}}}
+    fmt.Println(listToNumber(addTwoNumbers(l1, l2)))
+}
+</code></pre>
+<h2 id="result">Result</h2>
+<blockquote>
+<p>Runtime: 8 ms, faster than 89.94% of Go online submissions for Add Two Numbers.
+Memory Usage: 5 MB, less than 92.65% of Go online submissions for Add Two Numbers.</p>
+</blockquote>
+
   </main>
 
           
