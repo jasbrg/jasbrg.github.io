@@ -32,7 +32,7 @@ Solution package main import &amp;quot;fmt&amp;quot; type ListNode struct { Val 
     </item>
     
     <item>
-      <title>Two Snum</title>
+      <title>Two Sum</title>
       <link>https://jasbrg.github.io/leetcode/two-sum/</link>
       <pubDate>Wed, 10 Feb 2021 12:40:00 -0600</pubDate>
       
