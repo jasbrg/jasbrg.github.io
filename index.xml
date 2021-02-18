@@ -6,10 +6,15 @@
     <description>Recent content in Index on Jasblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2021 03:15:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://jasbrg.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 28 Jan 2021 03:15:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://jasbrg.github.io/cv/</link>
+      <pubDate>Wed, 17 Feb 2021 22:51:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/cv/</guid>
+      <description>Work Experience Teaching Assistant  Dates 2019&amp;ndash;2020 Location Amsterdam, NL Employer Vrije Universiteit Responsibilities Facilitate labs, grade submissions, observe exams, present exercises Classes  Software Testing, Introduction to Programming - Python, Advanced Programming Language Concepts, Data Structures and Algorithms    Fullstack Developer  Dates 2016&amp;ndash;2017 Location Milwaukee, WI, USA Employer Misix Inc. Responsibilities  Prototype Golang data-visualization interpreter backend Maintain customer auction recommendation preferences list Build Wordpress websites for business clients    Datacenter Assistant  Dates 2014&amp;ndash;2016 Location Milwaukee, WI, USA Employer University of Wisconsin - Milwaukee Responsibilities  Optimize researchers&#39; FORTRAN code Respond to hardware failures Develop Puppet modules Write FreeBSD ports    Alma mater Vrije Universiteit  Dates 2018&amp;ndash;2020 Location Amsterdam, NL Program Master of Computer Science, Foundations of Computing and Concurrency Grade 7.</description>
+    </item>
     
     <item>
       <title>Add Two Numbers</title>
@@ -256,16 +261,6 @@ I appreciate poetry, symbolic art, and folk music. The ideal piece in my opinion
       <guid>https://jasbrg.github.io/post/org-spreadsheet/</guid>
       <description>Intro This is getting pretty interesting. The spreadsheet functionality of org-tables is more impressive than I would have guessed. For small example here&amp;rsquo;s a snapshot of a diet.org file I&amp;rsquo;ve been working on.
 * Food Lookup Table #+TBLNAME: nutrition | name | cal/g | fat%g | carb%g | prot%g | |----------------+-------+-------+--------+--------| | corn beef hash | 1.64 | 10 | 10 | 7 |  * Food Log #+TBLNAME: diet | timestamp | name | grams | cal/g | calories | |------------------------+----------------+-------+-------+----------| | [2021-01-15 Fri 13:35] | corn beef hash | 198 | 1.</description>
-    </item>
-    
-    <item>
-      <title>Software Developer</title>
-      <link>https://jasbrg.github.io/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jasbrg.github.io/cv/</guid>
-      <description>jasbrg@gmail.com jasbrg.github.io jasbrg  Work Experience Teaching Assistant Vrije Universiteit Amsterdam, NL 2018 -- 2020  Variously facilitated labs, graded submissions, proctored exams, and covered exercises for the classes:
- Software Testing Introduction to Programming - Python Advanced Programming Language Concepts Data Structures and Algorithms  Fullstack Developer Misix Inc. Milwaukee, WI, USA 2016 -- 2017   Prototype Golang data-visualization interpreter backend Maintain customer auction recommendation preferences list Build Wordpress websites for business clients  Research Datacenter Assistant University of Wisconsin Milwaukee, WI, USA 2014 -- 2016   Optimize researchers&amp;rsquo; FORTRAN simulations Respond to hardware failures Write Puppet modules and FreeBSD ports  Education MSc.</description>
     </item>
     
   </channel>

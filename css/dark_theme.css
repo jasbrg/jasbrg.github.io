@@ -1,5 +1,5 @@
 html {
-    font-family: Input, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9em;
 }
 
@@ -22,5 +22,5 @@ html {
 code[class*="language-"],
 pre[class*="language-"] {
     color:#b9b9b9;
-    font-family: Input, monospace;
+    font-family: 'IBM Plex Mono', monospace;
 }

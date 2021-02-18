@@ -6,11 +6,7 @@
     <description>Recent content in org on Jasblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Feb 2021 20:22:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://jasbrg.github.io/categories/org/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Feb 2021 20:22:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/categories/org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org-bibliography</title>
       <link>https://jasbrg.github.io/post/org-bib/</link>

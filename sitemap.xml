@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jasbrg.github.io/cv/</loc>
+    <lastmod>2021-02-17T23:49:18-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jasbrg.github.io/leetcode/add-two-numbers/</loc>
     <lastmod>2021-02-13T19:14:33-06:00</lastmod>
   </url>
@@ -160,10 +165,6 @@
   <url>
     <loc>https://jasbrg.github.io/post/org-spreadsheet/</loc>
     <lastmod>2021-01-28T08:54:11-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/cv/</loc>
   </url>
   
 </urlset>
