@@ -334,10 +334,9 @@ works given an arbitrary two-dimensional grid and a window size.</p>
   (-map (lambda (p) (point-add origin p)) cardinal))
 
 (defun potential-vectors (origin n)
-  (-map
-   (lambda (x)
-     (specific-vector origin x))
-   (cardinal-vectors n)))
+  (-map (lambda (x)
+          (specific-vector origin x))
+        (cardinal-vectors n)))
 
 (defun grid-ref (grid idxs)
   (cl-loop
