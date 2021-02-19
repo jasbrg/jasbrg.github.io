@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org on Jasblog</title>
+    <link>https://jasbrg.github.io/tags/org/</link>
+    <description>Recent content in org on Jasblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Feb 2021 20:22:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org-bibliography</title>
+      <link>https://jasbrg.github.io/post/org-bib/</link>
+      <pubDate>Thu, 11 Feb 2021 20:22:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/org-bib/</guid>
+      <description>There are a few solutions for tracking bibliographies, the most prominent is Zotero but of course I&amp;rsquo;d like something to integrate into Emacs and Org mode. Luckily this problem has seen some man-hours, there is helm-bibtex and org-ref, and ebib, and pals. The former two are what I&amp;rsquo;ll use, I already use helm (half in preparation for using helm-bibtex) but I do wonder how it works all over. It&amp;rsquo;s already installed so let&amp;rsquo;s see how it works through ox-hugo: cite:turing50:comput.</description>
+    </item>
+    
+    <item>
+      <title>Org-Spreadsheet</title>
+      <link>https://jasbrg.github.io/post/org-spreadsheet/</link>
+      <pubDate>Fri, 15 Jan 2021 18:53:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/org-spreadsheet/</guid>
+      <description>Intro This is getting pretty interesting. The spreadsheet functionality of org-tables is more impressive than I would have guessed. For small example here&amp;rsquo;s a snapshot of a diet.org file I&amp;rsquo;ve been working on.
+* Food Lookup Table #+TBLNAME: nutrition | name | cal/g | fat%g | carb%g | prot%g | |----------------+-------+-------+--------+--------| | corn beef hash | 1.64 | 10 | 10 | 7 |  * Food Log #+TBLNAME: diet | timestamp | name | grams | cal/g | calories | |------------------------+----------------+-------+-------+----------| | [2021-01-15 Fri 13:35] | corn beef hash | 198 | 1.</description>
+    </item>
+    
+  </channel>
+</rss>

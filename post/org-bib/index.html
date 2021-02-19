@@ -284,11 +284,26 @@
       
         
           <br>
-          <strong>Last updated: </strong>February 13, 2021
+          <strong>Last updated: </strong>February 19, 2021
         
       
     </div>
 
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="/tags/org/">org</a>
+            </li>
+          
+        </ul>
+      </div>
     
     
     
@@ -303,7 +318,7 @@ Luckily this problem has seen some man-hours, there is helm-bibtex and org-ref,
 and ebib, and pals. The former two are what I&rsquo;ll use, I already use helm (half
 in preparation for using helm-bibtex) but I do wonder how it works all over.
 It&rsquo;s already installed so let&rsquo;s see how it works through ox-hugo:
-<sup id="02b96cb55d8fa750301cd9c817c852ff"><a href="#turing50:comput" title="Turing, Computing machinery and intelligence, {Mind}, v(236), 433-460 (1950).">turing50:comput</a></sup>.</p>
+cite:turing50:comput.</p>
 <p>Not too bad, though there are a few things here coupled, more than I&rsquo;d like but
 hey. The literal text is the name of the PDF in my library folder, which was
 governed by the <code>biblio-lookup</code>. There&rsquo;s a better discipline for naming these
@@ -336,7 +351,7 @@ demonstration I&rsquo;ll have proper DRY discipline:</p>
 helm interface gives access to any useful bibliography functions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> For
 example, here in the org-mode file I use to manage this site, I press <code>C-c m b</code>,
 type &ldquo;Turing&rdquo; and press enter the result is the string <code>cite:turing50:comput</code>
-gets inserted and later interpreted into: <sup id="02b96cb55d8fa750301cd9c817c852ff"><a href="#turing50:comput" title="Turing, Computing machinery and intelligence, {Mind}, v(236), 433-460 (1950).">turing50:comput</a></sup>. Or instead of
+gets inserted and later interpreted into: cite:turing50:comput. Or instead of
 pressing enter I can choose one of the eleven other actions which include
 browsing the DOI, opening the PDF, attaching notes, or attaching the PDF to an
 email.</p>
@@ -350,8 +365,8 @@ bibliography:</p>
 bibliographystyle:plain
 </code></pre>
 <p>I think I&rsquo;ll refactor my PDF names now.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<h1 id="bibliography">Bibliography</h1>
-<p><a id="turing50:comput"></a>[turing50:comput] Turing, Computing machinery and intelligence, <i>Mind</i>, <b>LIX(236)</b>, 433-460 (1950). <a href="https://academic.oup.com/mind/article/LIX/236/433/986238">link</a>. <a href="http://dx.doi.org/10.1093/mind/LIX.236.433">doi</a>. <a href="#02b96cb55d8fa750301cd9c817c852ff">↩</a></p>
+<p>bibliography:tex/refs.bib
+bibliographystyle:plain</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
