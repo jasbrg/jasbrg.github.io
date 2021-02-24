@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jasbrg.github.io/categories/analysis/</loc>
+    <lastmod>2021-02-23T22:14:29-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jasbrg.github.io/categories/</loc>
-    <lastmod>2021-02-21T12:10:40-06:00</lastmod>
+    <lastmod>2021-02-23T22:14:29-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/lit-analysis/</loc>
+    <lastmod>2021-02-23T22:14:29-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/lit-analysis/this-is-just-to-say/</loc>
+    <lastmod>2021-02-23T22:14:29-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/categories/post/</loc>
+    <lastmod>2021-02-23T22:14:29-06:00</lastmod>
   </url>
   
   <url>
@@ -13,22 +33,12 @@
   </url>
   
   <url>
-    <loc>https://jasbrg.github.io/tags/poem/</loc>
-    <lastmod>2021-02-21T12:10:40-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/categories/post/</loc>
+    <loc>https://jasbrg.github.io/categories/poetry/</loc>
     <lastmod>2021-02-21T12:10:40-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://jasbrg.github.io/post/</loc>
-    <lastmod>2021-02-21T12:10:40-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/tags/</loc>
     <lastmod>2021-02-21T12:10:40-06:00</lastmod>
   </url>
   
@@ -59,6 +69,11 @@
   
   <url>
     <loc>https://jasbrg.github.io/post/org-bib/</loc>
+    <lastmod>2021-02-21T12:10:40-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/tags/</loc>
     <lastmod>2021-02-21T12:10:40-06:00</lastmod>
   </url>
   
