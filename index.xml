@@ -10,7 +10,7 @@
     <item>
       <title>Dot Emacs</title>
       <link>https://jasbrg.github.io/init-el/</link>
-      <pubDate>Sun, 28 Feb 2021 22:42:30 -0600</pubDate>
+      <pubDate>Mon, 01 Mar 2021 00:47:02 -0600</pubDate>
       
       <guid>https://jasbrg.github.io/init-el/</guid>
       <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
@@ -59,7 +59,8 @@ River&#39;s mouth covered for a cough, now frothed in frosted draught</descripti
       <pubDate>Wed, 17 Feb 2021 22:51:00 -0600</pubDate>
       
       <guid>https://jasbrg.github.io/cv/</guid>
-      <description>Work Experience Teaching Assistant  Dates 2019&amp;ndash;2020 Location Amsterdam, NL Employer Vrije Universiteit Responsibilities Facilitate labs and exercise classes, grade code submissions and homework, observe exams Classes  Software Testing Introduction to Programming - Python Advanced Programming Language Concepts Data Structures and Algorithms    Fullstack Developer  Dates 2016&amp;ndash;2017 Location Milwaukee, WI, USA Employer Misix Inc. Responsibilities  Prototype Golang data-visualization interpreter backend Maintain customer auction recommendation preferences list Build Wordpress websites for business clients    Datacenter Assistant  Dates 2014&amp;ndash;2016 Location Milwaukee, WI, USA Employer University of Wisconsin - Milwaukee Responsibilities  Optimize researchers&#39; FORTRAN code Respond to hardware failures Develop Puppet modules Write FreeBSD ports    Alma mater Vrije Universiteit  Dates 2018&amp;ndash;2020 Location Amsterdam, NL Program Master of Computer Science, Foundations of Computing and Concurrency Grade 7.</description>
+      <description>Work Experience Teaching Assistant  Dates 2019&amp;ndash;2020 Location Amsterdam, NL Employer Vrije Universiteit Responsibilities Facilitate labs and exercise classes, grade code submissions and homework, observe exams  Classes 1. Software Testing 2. Introduction to Programming - Python 3. Advanced Programming Language Concepts 4. Data Structures and Algorithms
+Fullstack Developer  Dates 2016&amp;ndash;2017 Location Milwaukee, WI, USA Employer Misix Inc.  Responsibilities - Prototype Golang data-visualization interpreter backend - Maintain customer auction recommendation preferences list - Build Wordpress websites for business clients</description>
     </item>
     
     <item>

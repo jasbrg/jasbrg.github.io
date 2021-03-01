@@ -754,8 +754,7 @@ linking manually and often. Then a web of concepts can be generated.</p>
 &quot; :unnarrowed t))
         org-roam-capture-ref-templates
         '((&quot;r&quot; &quot;ref&quot; plain #'org-roam-capture--get-point &quot;%?&quot;
-           :file-name &quot;%&lt;%Y%m%d%H%M%S&gt;-${slug}&quot; :head &quot;#+title: ${title}
-#+roam_key: ${ref}&quot; :unnarrowed))
+           :file-name &quot;%&lt;%Y%m%d%H%M%S&gt;-${slug}&quot; :head &quot;#+title: ${title}\n#+roam_tags: inbox\n#+roam_key: ${ref}&quot; :unnarrowed))
         org-roam-dailies-capture-templates
         '((&quot;d&quot; &quot;default&quot; entry (function org-roam-capture--get-point)
            &quot;* %&lt;%H:%M&gt; %?&quot;
