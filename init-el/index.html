@@ -353,7 +353,11 @@ experimental API keys.</p>
 <pre><code class="language-emacs-lisp">(straight-use-package 'use-package)
 </code></pre>
 <h2 id="defaults">Defaults</h2>
-<pre><code class="language-emacs-lisp">(setq-default
+<pre><code class="language-emacs-lisp">(defvar bibliography-file &quot;~/org/tex/refs.bib&quot;)
+(defvar library-directory &quot;~/org/lib/&quot;)
+(defvar research-notes-file &quot;~/org/tex/notes.org&quot;)
+
+(setq-default
  cursor-type 'box
  custom-file &quot;~/.emacs.d/custom.el&quot;
  fill-column 80
@@ -442,7 +446,7 @@ changes.</p>
              (helm-mode          &quot; 🞷&quot;)
              (auto-fill-function &quot; ⮐&quot; t)
              (isearch-mode       &quot; 🔍&quot; t)
-             (auto-revert-mode   &quot; 🜁&quot; t)
+             (auto-revert-mode   &quot; 🜁&quot; autorevert)
              (eldoc-mode         &quot; 🝗&quot; t)
              (which-key-mode     &quot; ‽&quot; which-key)
              (undo-tree-mode     &quot; 🜶&quot; undo-tree)
@@ -732,7 +736,6 @@ can be very simple.</p>
 a super-powered Org Capture, but the magic of it comes from keeping it small and
 linking manually and often. Then a web of concepts can be generated.</p>
 <pre><code class="language-emacs-lisp">(use-package org-roam :straight t
-  :diminish
   :bind
   ((&quot;C-c o r c&quot; . 'org-roam-capture)
    (&quot;C-c o r f&quot; . 'org-roam-find-file)
@@ -764,8 +767,12 @@ linking manually and often. Then a web of concepts can be generated.</p>
   ;; (advice-add 'org-protocol-check-filename-for-protocol :override '+org-protocol-check-filename-for-protocol)
   )
 
+(use-package org-capture-ref
+  :straight (org-capture-ref
+             :type git :host github :repo &quot;yantar92/org-capture-ref&quot;
+             :fork (:host github :repo &quot;jasbrg/org-capture-ref&quot;)))
+
 (use-package org-roam-bibtex :straight t
-  :diminish
   :hook (org-roam-mode . org-roam-bibtex-mode))
 </code></pre>
 </li>
@@ -774,11 +781,7 @@ linking manually and often. Then a web of concepts can be generated.</p>
 <ul>
 <li>
 <p>Org Bibliography</p>
-<pre><code class="language-emacs-lisp">(defvar bibliography-file &quot;~/org/tex/refs.bib&quot;)
-(defvar library-directory &quot;~/org/lib/&quot;)
-(defvar research-notes-file &quot;~/org/tex/notes.org&quot;)
-
-(use-package org-ref
+<pre><code class="language-emacs-lisp">(use-package org-ref
   :straight t
   :config
   (setq reftex-default-bibliography (list bibliography-file)
@@ -981,7 +984,8 @@ some way to only download limited # at a time, queuing rest?</li>
   :straight t)
 </code></pre>
 <h3 id="shell">Shell</h3>
-<pre><code class="language-emacs-lisp">(use-package eshell
+<pre><code class="language-emacs-lisp">(use-package vterm :straight t)
+(use-package eshell
   :config
   (setq
    eshell-prompt-function
