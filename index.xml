@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jan 2021 03:15:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Dot Emacs</title>
+      <link>https://jasbrg.github.io/init-el/</link>
+      <pubDate>Sat, 27 Feb 2021 21:37:53 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/init-el/</guid>
+      <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
+&amp;ndash; Tao Te Ching - Lao Tzu - chapter 42
+ ;; Focus on the task at hand (setq gc-cons-threshold most-positive-fixnum) ;; Sort the rest out later (add-hook &#39;after-init-hook (lambda () (setq gc-cons-threshold (* 8 1024 1024)))) ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.</description>
+    </item>
+    
+    <item>
       <title>On: This Is Just To Say</title>
       <link>https://jasbrg.github.io/lit-analysis/this-is-just-to-say/</link>
       <pubDate>Tue, 23 Feb 2021 22:14:00 -0600</pubDate>
