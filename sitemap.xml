@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jasbrg.github.io/tags/algo/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/categories/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/post/monte-carlo-pi/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/categories/post/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/post/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jasbrg.github.io/tags/</loc>
+    <lastmod>2021-03-01T14:28:02-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jasbrg.github.io/init-el/</loc>
     <lastmod>2021-03-01T00:47:02-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://jasbrg.github.io/categories/analysis/</loc>
-    <lastmod>2021-02-26T03:33:39-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/categories/</loc>
     <lastmod>2021-02-26T03:33:39-06:00</lastmod>
   </url>
   
@@ -33,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://jasbrg.github.io/categories/post/</loc>
-    <lastmod>2021-02-26T03:33:39-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jasbrg.github.io/post/ough-d/</loc>
-    <lastmod>2021-02-26T03:33:39-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/post/</loc>
     <lastmod>2021-02-26T03:33:39-06:00</lastmod>
   </url>
   
@@ -79,11 +94,6 @@
   
   <url>
     <loc>https://jasbrg.github.io/post/org-bib/</loc>
-    <lastmod>2021-02-26T03:33:39-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jasbrg.github.io/tags/</loc>
     <lastmod>2021-02-26T03:33:39-06:00</lastmod>
   </url>
   

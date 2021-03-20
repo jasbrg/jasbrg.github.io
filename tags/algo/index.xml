@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algo on Jasblog</title>
+    <link>https://jasbrg.github.io/tags/algo/</link>
+    <description>Recent content in algo on Jasblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Mar 2021 14:27:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/tags/algo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monte Carlo Pi</title>
+      <link>https://jasbrg.github.io/post/monte-carlo-pi/</link>
+      <pubDate>Mon, 01 Mar 2021 14:27:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/monte-carlo-pi/</guid>
+      <description>Using randomness to solve problems that might be deterministic in principle. It is useful in circumstances when there is a simple test to verify if some solution is valid or invalid, many guesses are (uniformly) generated in the potential domain and their validity checked, then the proportion of valid guesses approximates to the solution.
+Examples This is a single threaded approximation of the value of π. It can calculate a trillion guesses in around ten seconds, the multithreaded version on my four core ThinkPad performs the same amount of guesses in around five seconds.</description>
+    </item>
+    
+  </channel>
+</rss>

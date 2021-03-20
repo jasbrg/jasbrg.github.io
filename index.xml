@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jan 2021 03:15:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Monte Carlo Pi</title>
+      <link>https://jasbrg.github.io/post/monte-carlo-pi/</link>
+      <pubDate>Mon, 01 Mar 2021 14:27:00 -0600</pubDate>
+      
+      <guid>https://jasbrg.github.io/post/monte-carlo-pi/</guid>
+      <description>Using randomness to solve problems that might be deterministic in principle. It is useful in circumstances when there is a simple test to verify if some solution is valid or invalid, many guesses are (uniformly) generated in the potential domain and their validity checked, then the proportion of valid guesses approximates to the solution.
+Examples This is a single threaded approximation of the value of π. It can calculate a trillion guesses in around ten seconds, the multithreaded version on my four core ThinkPad performs the same amount of guesses in around five seconds.</description>
+    </item>
+    
+    <item>
       <title>Dot Emacs</title>
       <link>https://jasbrg.github.io/init-el/</link>
       <pubDate>Mon, 01 Mar 2021 00:47:02 -0600</pubDate>
@@ -54,13 +64,14 @@ River&#39;s mouth covered for a cough, now frothed in frosted draught</descripti
     </item>
     
     <item>
-      <title>Curriculum Vitae</title>
+      <title></title>
       <link>https://jasbrg.github.io/cv/</link>
       <pubDate>Wed, 17 Feb 2021 22:51:00 -0600</pubDate>
       
       <guid>https://jasbrg.github.io/cv/</guid>
-      <description>Work Experience Teaching Assistant  Dates 2019&amp;ndash;2020 Location Amsterdam, NL Employer Vrije Universiteit Responsibilities Facilitate labs and exercise classes, grade code submissions and homework, observe exams  Classes 1. Software Testing 2. Introduction to Programming - Python 3. Advanced Programming Language Concepts 4. Data Structures and Algorithms
-Fullstack Developer  Dates 2016&amp;ndash;2017 Location Milwaukee, WI, USA Employer Misix Inc.  Responsibilities - Prototype Golang data-visualization interpreter backend - Maintain customer auction recommendation preferences list - Build Wordpress websites for business clients</description>
+      <description>\centering
+Jacob Sonnenberg | Email | jasbrg@gmail.com | | Phone | _ | | Address | _ | | Site | jasbrg.github.io |
+Work Experience Teaching Assistant  Dates 2019&amp;ndash;2020 Location Amsterdam, NL Company Vrije Universiteit van Amsterdam  Responsibilities - Facilitated twice weekly Python labs for non-CS students, Scala labs for second year CS students - Led once weekly data structures and algorithms exercise class for second year CS students - Assisted teaching graduate Software Testing</description>
     </item>
     
     <item>

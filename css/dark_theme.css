@@ -28,3 +28,7 @@ pre[class*="language-"] {
     color:#b9b9b9;
     font-family: 'IBM Plex Mono', monospace;
 }
+
+code {
+    font-size: 1.2em;
+}

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.80.0" />
-  <link rel="canonical" href="/categories/post/">
+  <link rel="canonical" href="/post/monte-carlo-pi/">
 
   
 
@@ -40,7 +40,7 @@
 
   
   
-  <title>post | Jasblog</title>
+  <title>Monte Carlo Pi | Jasblog</title>
 </head>
 
   <body>
@@ -187,7 +187,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -282,132 +282,92 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>post</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Monte Carlo Pi
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>March 1, 2021
+      
+        
+          <br>
+          <strong>Last updated: </strong>March 1, 2021
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="/tags/algo/">algo</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+
+    
+
+    <p>Using randomness to solve problems that might be deterministic in principle. It
+is useful in circumstances when there is a simple test to verify if some
+solution is valid or invalid, many guesses are (uniformly) generated in the
+potential domain and their validity checked, then the proportion of valid
+guesses approximates to the solution.</p>
+<h2 id="examples">Examples</h2>
+<p>This is a single threaded approximation of the value of π. It can calculate a
+trillion guesses in around ten seconds, the multithreaded version on my four
+core ThinkPad performs the same amount of guesses in around five seconds. An
+impressive loss of efficiency&hellip;</p>
+<p>Here we ride the monoid, using some properties of the &ldquo;unit&rdquo; or &ldquo;identity&rdquo;
+element under multiplication to relate the unit square and unit circle to find
+π. Which is to say we&rsquo;re using the number one a lot because <code>1*1 = 1</code>.</p>
+<pre><code class="language-go">// We provide the number of guesses to make
+func monte_carlo_pi(reps int) float64 {
+    // Ready our places
+    var x, y float64
+    count := 0
+    seed := rand.NewSource(time.Now().UnixNano())
+    random := rand.New(seed)
+
+    // Perform the experiment
+    for i := 0; i &lt; reps; i++ {
+        // Choose a random point in the unit square
+        x = random.Float64()
+        y = random.Float64()
+
+        // Test if point is in the unit circle
+        if num := x*x + y*y; num &lt; 1 {
+            count++
+        }
+    }
+    // The unit square is only in the first quadrant
+    // The unit circle is in all four, so adjust.
+    return (float64(count) / float64(reps)) * 4
+}
+</code></pre>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
-  
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post/monte-carlo-pi/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Monte Carlo Pi
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/lit-analysis/this-is-just-to-say/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          On: This Is Just To Say
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/ough-d/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Ough-d
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/org-bib/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-bibliography
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/gaunt-drift/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Gaunt Drift
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/hello/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Hello
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post/org-spreadsheet/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Org-Spreadsheet
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">
