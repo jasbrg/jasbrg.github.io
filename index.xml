@@ -10,12 +10,12 @@
     <item>
       <title>Dot Emacs</title>
       <link>https://jasbrg.github.io/init-el/</link>
-      <pubDate>Mon, 22 Mar 2021 13:11:03 -0500</pubDate>
+      <pubDate>Mon, 22 Mar 2021 14:20:26 -0500</pubDate>
       
       <guid>https://jasbrg.github.io/init-el/</guid>
       <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
-&amp;ndash; Tao Te Ching - Laozi - chapter 42
- ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.emacs.d/init.org&amp;quot;)) (global-set-key (kbd &amp;quot;C-c o i&amp;quot;) &#39;my/find-init)  A literate approach to configuration gives it a more personal taste. Somewhat stolen from angrybacon Note that this is not ideal for maintainability, for this see purcell&amp;rsquo;s emacs.</description>
+&amp;ndash; Tao Te Ching - Laozi - chapter 42, On the topic of CAR and CDR
+ ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.emacs.d/init.org&amp;quot;)) (global-set-key (kbd &amp;quot;C-c o i&amp;quot;) &#39;my/find-init)  A literate approach to configuration gives it a more personal taste.</description>
     </item>
     
     <item>
@@ -304,7 +304,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
       <pubDate>Thu, 28 Jan 2021 14:52:00 -0600</pubDate>
       
       <guid>https://jasbrg.github.io/about/</guid>
-      <description>Hello Reader,
+      <description>Dear Reader,
 The name&amp;rsquo;s Jacob. Before the catastrophe I studied theoretical computer science at the Vrije Universiteit van Amsterdam, and got a bachelor&amp;rsquo;s in computer science at the University of Wisconsin - Milwaukee before that.
 In technology I like Emacs, Linux, programming language theory, and interfaces. Other intellectual interests are philosophy, logic, and when I&amp;rsquo;m feeling bold, theology.
 I appreciate poetry, symbolic art, and folk music. The ideal piece in my opinion is challenging, inviting interpretation.</description>
