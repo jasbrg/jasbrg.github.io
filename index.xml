@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jan 2021 03:15:00 -0600</lastBuildDate><atom:link href="https://jasbrg.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Dot Emacs</title>
+      <link>https://jasbrg.github.io/init-el/</link>
+      <pubDate>Mon, 22 Mar 2021 13:11:03 -0500</pubDate>
+      
+      <guid>https://jasbrg.github.io/init-el/</guid>
+      <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
+&amp;ndash; Tao Te Ching - Laozi - chapter 42
+ ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.emacs.d/init.org&amp;quot;)) (global-set-key (kbd &amp;quot;C-c o i&amp;quot;) &#39;my/find-init)  A literate approach to configuration gives it a more personal taste. Somewhat stolen from angrybacon Note that this is not ideal for maintainability, for this see purcell&amp;rsquo;s emacs.</description>
+    </item>
+    
+    <item>
       <title>Monte Carlo Pi</title>
       <link>https://jasbrg.github.io/post/monte-carlo-pi/</link>
       <pubDate>Mon, 01 Mar 2021 14:27:00 -0600</pubDate>
@@ -15,17 +26,6 @@
       <guid>https://jasbrg.github.io/post/monte-carlo-pi/</guid>
       <description>Using randomness to solve problems that might be deterministic in principle. It is useful in circumstances when there is a simple test to verify if some solution is valid or invalid, many guesses are (uniformly) generated in the potential domain and their validity checked, then the proportion of valid guesses approximates to the solution.
 Examples This is a single threaded approximation of the value of π. It can calculate a trillion guesses in around ten seconds, the multithreaded version on my four core ThinkPad performs the same amount of guesses in around five seconds.</description>
-    </item>
-    
-    <item>
-      <title>Dot Emacs</title>
-      <link>https://jasbrg.github.io/init-el/</link>
-      <pubDate>Mon, 01 Mar 2021 00:47:02 -0600</pubDate>
-      
-      <guid>https://jasbrg.github.io/init-el/</guid>
-      <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
-&amp;ndash; Tao Te Ching - Lao Tzu - chapter 42
- ;; Focus on the task at hand (setq gc-cons-threshold most-positive-fixnum) ;; Sort the rest out later (add-hook &#39;after-init-hook (lambda () (setq gc-cons-threshold (* 8 1024 1024)))) ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.</description>
     </item>
     
     <item>
