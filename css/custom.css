@@ -1,0 +1,38 @@
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.intro-and-nav, .main-and-footer {
+    background-color: #101010;
+    color: #b9b9b9;
+}
+
+.main-and-footer > div {
+    max-width: 65rem;
+}
+
+.pattern [aria-current] {
+    color: #101010;
+    background-color: #b9b9b9;
+}
+
+.logo img {
+    filter: invert(100%);
+    background-color: transparent;
+}
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color:#b9b9b9;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+code {
+    font-size: 1.0em;
+}
