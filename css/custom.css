@@ -1,6 +1,7 @@
 html {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.2em;
+    scrollbar-width: none;
 }
 
 h1, h2, h3, h4 {
@@ -35,4 +36,21 @@ pre[class*="language-"] {
 
 code {
     font-size: 1.0em;
+}
+
+.toc {
+    height: 400px;
+    width: 250px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+    text-decoration: none;
+}
+
+.toc::-webkit-scrollbar {
+    display: none;
+}
+
+.toc a {
+    border-bottom: 0px;
 }
