@@ -433,27 +433,32 @@
 
 ;;; use-package.el setup
 
-(tseraight-use-package 'use-package)
+(straight-use-package 'use-package)
 
 </code></pre>
 <h3 id="framing-and-presentation">Framing &amp; Presentation</h3>
 <pre><code class="language-emacs-lisp">;;; Various visual modifications
+
 ;; Widgets
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
 ;; Indicators
+
 (blink-cursor-mode +1)
 (global-hl-line-mode -1)
 (global-visual-line-mode +1)
 
 ;; Fringe
+
 (setq-default
  indicate-empty-lines +1
  indicate-buffer-boundaries +1)
 
 ;;; Font Face
+
 (use-package emacs
   :init
   (defun my/set-font ()
@@ -467,10 +472,13 @@
                 (my/set-font)))))
 
 ;;; Color Scheme
+
 (use-package base16-theme
   :straight t :demand t
   :custom (base16-highlight-mode-line 'box)
   :config (load-theme 'base16-grayscale-dark t))
+
+;;; Highlighting
 
 (use-package rainbow-mode :straight t)
 
@@ -483,12 +491,14 @@
    show-paren-when-point-in-periphery t))
 
 ;;; Discoverability is supreme
+
 (use-package which-key
   :straight t
   :config
   (which-key-mode +1))
 
-;; Mode line delights
+;;; A belt of Icons
+
 (use-package delight
   :straight t
   :config
@@ -501,14 +511,16 @@
              (which-key-mode     &quot; ‽&quot; which-key)
              (undo-tree-mode     &quot; 🜶&quot; undo-tree)
              (company-mode       nil company)
-             (org-src-mode       &quot; 🗈&quot; org-src)
+             (org-src-mode       nil org-src)
              (org-capture-mode   &quot; 🗅&quot; org-capture)
              (orglink-mode       &quot; ⛓&quot; orglink)
              (org-roam-bibtex-mode nil org-roam-bibtex)
+             (projectile-mode &quot; ₽&quot; projectile)
              (gcmh-mode nil gcmh)
              (reftex-mode nil reftex)
-             (subword-mode nil t)
-             (visual-line-mode nil t))))
+             (subword-mode nil subword)
+             (visual-line-mode nil t)
+             (yas-minor-mode nil yasnippet))))
 
 ;; Enable ANSI Colors
 
