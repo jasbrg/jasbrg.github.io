@@ -283,39 +283,22 @@
   <div class="toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prologue">Prologue</a></li>
-    <li><a href="#bootstrap-packages">Bootstrap packages</a>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#introduction">Introduction</a>
       <ul>
-        <li><a href="#package">package</a>
+        <li><a href="#packaging">Packaging</a></li>
+        <li><a href="#framing-and-presentation">Framing &amp; Presentation</a></li>
+        <li><a href="#commands-and-interaction">Commands &amp; Interaction</a>
           <ul>
-            <li><a href="#it-is-a-secret-to-everyone">It is a secret to everyone</a></li>
+            <li><a href="#commands--helm">Commands (Helm)</a></li>
           </ul>
         </li>
-        <li><a href="#straight">straight</a></li>
-        <li><a href="#use-package">use-package</a></li>
-        <li><a href="#nicer-gc">Nicer GC</a></li>
-      </ul>
-    </li>
-    <li><a href="#defaults">Defaults</a>
-      <ul>
-        <li><a href="#prevent-littering">Prevent littering!</a></li>
-      </ul>
-    </li>
-    <li><a href="#theming-presentation">Theming, Presentation</a></li>
-    <li><a href="#interaction">Interaction</a>
-      <ul>
-        <li><a href="#projectile">Projectile</a></li>
-        <li><a href="#helm">Helm</a>
-          <ul>
-            <li><a href="#helm-modules">Helm Modules</a></li>
-          </ul>
-        </li>
-        <li><a href="#deft">Deft</a></li>
-        <li><a href="#yasnippets">Yasnippets</a></li>
+        <li><a href="#trash-and-garbage">Trash &amp; Garbage</a></li>
       </ul>
     </li>
     <li><a href="#languages">Languages</a>
       <ul>
+        <li><a href="#ledger-mode">Ledger Mode</a></li>
         <li><a href="#sql-mode">Sql Mode</a></li>
         <li><a href="#web-mode">Web Mode</a></li>
         <li><a href="#golang">Golang</a></li>
@@ -334,28 +317,27 @@
         <li><a href="#systemd">Systemd</a></li>
         <li><a href="#org-mode">Org Mode</a>
           <ul>
-            <li><a href="#org-crypt">Org Crypt</a></li>
-            <li><a href="#org-capture">Org Capture</a></li>
+            <li><a href="#org-agenda">Org Agenda</a></li>
             <li><a href="#org-babel">Org Babel</a></li>
-            <li><a href="#org-roam">Org Roam</a></li>
             <li><a href="#org-bibliography">Org Bibliography</a></li>
+            <li><a href="#org-capture">Org Capture</a></li>
+            <li><a href="#org-crypt">Org Crypt</a></li>
+            <li><a href="#org-roam">Org Roam</a></li>
+            <li><a href="#org-xournalpp">Org Xournalpp</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="#features">Features</a>
       <ul>
-        <li><a href="#minor-modes">Minor Modes</a>
+        <li><a href="#project-management">Project Management</a>
           <ul>
-            <li><a href="#company-completion">Company Completion</a></li>
-            <li><a href="#language-server-protocol">Language Server Protocol</a></li>
+            <li><a href="#version-control">Version Control</a></li>
           </ul>
         </li>
-        <li><a href="#docker-podman">Docker/Podman</a></li>
+        <li><a href="#document-viewer">Document Viewer</a></li>
         <li><a href="#browser">Browser</a></li>
         <li><a href="#dictionary">Dictionary</a></li>
-        <li><a href="#quick-navigation">Quick Navigation</a></li>
-        <li><a href="#version-control">Version Control</a></li>
         <li><a href="#media">Media</a>
           <ul>
             <li><a href="#ox-easy-hugo">Ox/Easy/Hugo</a></li>
@@ -368,15 +350,27 @@
         </li>
         <li><a href="#password-manager">Password Manager</a></li>
         <li><a href="#shell">Shell</a></li>
-        <li><a href="#wolfram">Wolfram</a></li>
+        <li><a href="#snippets">Snippets</a></li>
       </ul>
     </li>
-    <li><a href="#init-spirations">Init-spirations</a>
+    <li><a href="#appendix">Appendix</a>
       <ul>
-        <li><a href="#sacha-chua">Sacha Chua</a></li>
-        <li><a href="#jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></a></li>
-        <li><a href="#valignatev"><a href="https://github.com/valignatev/dotfiles/blob/literate-config/.emacs.d/config.org">valignatev</a></a></li>
-        <li><a href="#joseph8th"><a href="https://github.com/joseph8th/literatemacs">joseph8th</a></a></li>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#bibliography">Bibliography</a>
+          <ul>
+            <li><a href="#sacha-chua"><a href="https://pages.sachachua.com/.emacs.d/Sacha.html">Sacha Chua</a></a></li>
+            <li><a href="#jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></a></li>
+            <li><a href="#valignatev"><a href="https://github.com/valignatev/dotfiles/blob/literate-config/.emacs.d/config.org">valignatev</a></a></li>
+            <li><a href="#joseph8th"><a href="https://github.com/joseph8th/literatemacs">joseph8th</a></a></li>
+            <li><a href="#jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></a></li>
+            <li><a href="#jordanbiondo"><a href="https://github.com/jordonbiondo/.emacs.d">jordanbiondo</a></a></li>
+            <li><a href="#norman-walsh"><a href="https://so.nwalsh.com/2020/02/29/dot-emacs">Norman Walsh</a></a></li>
+            <li><a href="#matthewzmd"><a href="https://github.com/MatthewZMD/.emacs.d">MatthewZMD</a></a></li>
+            <li><a href="#musa-al-hassy"><a href="https://github.com/alhassy/emacs.d">Musa al-Hassy</a></a></li>
+            <li><a href="#steve-purcell"><a href="https://github.com/purcell/emacs.d">Steve Purcell</a></a></li>
+            <li><a href="#bernt-hansen"><a href="http://doc.norang.ca/org-mode.html">Bernt Hansen</a></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -394,54 +388,37 @@
           
   <main id="main">
     <h1>Dot Emacs</h1>
-    <pre><code class="language-emacs-lisp">;;; start of init.el
+    <h2 id="preface">Preface</h2>
+<p>Here are configurations which benefit from coming before the rest.</p>
+<pre><code class="language-emacs-lisp">;;; start of early-init.el
+
+(setq gc-cons-threshold most-positive-fixnum
+      gc-cons-percentage 0.6
+      package-enable-at-startup nil)
+(add-hook
+ 'emacs-startup-hook
+ (lambda ()
+   (setq gc-cons-threshold (* 16 1024 1024)
+         gc-cons-percentage 0.1)))
+
+;;; end of early-init.el
 </code></pre>
-<h2 id="prologue">Prologue</h2>
-<blockquote>
-<p>The Tao begot one.
-One begot two.
-Two begot three.
-And three begot the ten thousand things.</p>
-<p>&ndash; Tao Te Ching - Laozi - chapter 42,
-On the topic of CAR and CDR</p>
-</blockquote>
-<pre><code class="language-emacs-lisp">;; Leave yourself a way home
-(defun my/find-init ()
-  (interactive)
-  (find-file &quot;~/.emacs.d/init.org&quot;))
-(global-set-key (kbd &quot;C-c o i&quot;) 'my/find-init)
-</code></pre>
-<p>A literate approach to configuration gives it a more personal taste. Somewhat
-stolen from <a href="https://github.com/angrybacon/dotemacs/blob/master/dotemacs.org">angrybacon</a> Note that this is not ideal for maintainability, for this
-see <a href="https://github.com/purcell/emacs.d">purcell&rsquo;s emacs.d</a> for its small modules. No, this is for me to apply my
-arbitrary ontology, encoding my understanding of Emacs! Or at least what <strong>I</strong>
-want from it.</p>
-<p>In the proper LISP fashion it&rsquo;ll be done in a ouroboros. Org will contain
-Emacs&rsquo;s configuration, which configures Org. Emacs(.d) will also logically
-contain the body of my Org files, including &lt;~/org/blog&gt; which will
-define my Hugo generated, (github hosted) website, which this literate
-configuration ought fit on verbatim&hellip;</p>
-<p>I went off Hugo a while to check out the <code>org-static-blog</code> which is nice, but
-for what I need just the better look of a Hugo generated site is sufficient.</p>
-<h2 id="bootstrap-packages">Bootstrap packages</h2>
-<p>Install package installing packages.</p>
-<h3 id="package">package</h3>
-<pre><code class="language-emacs-lisp">(require 'package)
+<h2 id="introduction">Introduction</h2>
+<h3 id="packaging">Packaging</h3>
+<pre><code class="language-emacs-lisp">;;; start of init.el
+
+;;; package.el setup
+
+(require 'package)
 (package-initialize)
 (setq
  package-archives
  '((&quot;gnu&quot; . &quot;https://elpa.gnu.org/packages/&quot;)
    (&quot;melpa&quot; . &quot;https://melpa.org/packages/&quot;)))
-</code></pre>
-<h4 id="it-is-a-secret-to-everyone">It is a secret to everyone</h4>
-<p>Function defintion hidden to keep simple secret values. Where applicable,
-&lt;~/.authinfo.gpg&gt; should be preferred for proper security. This is more for
-experimental API keys.</p>
-<pre><code class="language-emacs-lisp">(defun my/secret (sym) nil)
-(load &quot;secrets.el&quot;)
-</code></pre>
-<h3 id="straight">straight</h3>
-<pre><code class="language-emacs-lisp">(defvar bootstrap-version)
+
+;;; straight.el setup
+
+(defvar bootstrap-version)
 (let ((bootstrap-file
        (expand-file-name &quot;straight/repos/straight.el/bootstrap.el&quot; user-emacs-directory))
       (bootstrap-version 5))
@@ -453,92 +430,14 @@ experimental API keys.</p>
       (goto-char (point-max))
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
-</code></pre>
-<h3 id="use-package">use-package</h3>
-<pre><code class="language-emacs-lisp">(straight-use-package 'use-package)
-</code></pre>
-<h3 id="nicer-gc">Nicer GC</h3>
-<pre><code class="language-emacs-lisp">(use-package gcmh
-  :straight t
-  :config
-  (gcmh-mode +1))
-</code></pre>
-<h2 id="defaults">Defaults</h2>
-<pre><code class="language-emacs-lisp">(defvar bibliography-file &quot;~/org/tex/refs.bib&quot;)
-(defvar library-directory &quot;~/org/lib/&quot;)
-(defvar research-notes-file &quot;~/org/tex/notes.org&quot;)
 
-(setq-default
- cursor-type 'box
- custom-file &quot;~/.emacs.d/custom.el&quot;
- fill-column 80
- help-window-select t
- indent-tabs-mode nil
- inhibit-startup-screen t
- initial-scratch-message &quot;&quot;
- dired-listing-switches &quot;-alhF&quot;
- scroll-conservatively  70
- mouse-wheel-progressive-speed nil
- scroll-margin 2
- sentence-end-double-space nil
- uniquify-buffer-name-style 'forward
- tab-width 4)
-(fset 'yes-or-no-p 'y-or-n-p)           ;Lazy y/n
-(global-subword-mode 1)                 ;They're CamelCase'd for a reason
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)
-(set-default-coding-systems 'utf-8)
+;;; use-package.el setup
+
+(tseraight-use-package 'use-package)
+
 </code></pre>
-<h3 id="prevent-littering">Prevent littering!</h3>
-<pre><code class="language-emacs-lisp">(use-package clean-buffers
-  :straight t
-  :custom
-  ((clean-buffers-useless-buffer-time-out (* 24 3600))
-   (clean-buffers-useless-buffer-names
-    (list &quot;*Buffer List*&quot; &quot;*Backtrace*&quot; &quot;*Apropos*&quot; &quot;*Completions*&quot;
-          &quot;*Help*&quot; &quot;\\.~master~&quot; &quot;\\*vc-dir\\*&quot; &quot;\\*tramp/.+\\*&quot; &quot;\\*vc-git.+\\*&quot;
-          (rx &quot;*helm-mode-&quot; (+ any) &quot;*&quot;))))
-  :config
-  (clean-buffers-turn-on-auto-clean-buffers))
-(setq backup-directory-alist '((&quot;.&quot; . &quot;~/.emacs.d/cache/backup/&quot;))
-      tramp-backup-directory-alist backup-directory-alist
-      autosave-dir &quot;~/.emacs.d/cache/autosave&quot;
-      auto-save-list-file-prefix autosave-dir
-      auto-save-file-name-transforms `((&quot;.*&quot;  ,autosave-dir t))
-      delete-old-versions t
-      kept-old-versions 1000
-      vc-make-backup-files t
-      version-control t)
-(with-eval-after-load 'request
-  (setq-default request-storage-directory &quot;~/.emacs.d/cache/request/&quot;))
-(with-eval-after-load 'tramp
-  (setq-default tramp-persistency-file-name &quot;~/.emacs.d/cache/tramp.eld&quot;))
-(with-eval-after-load 'url
-  (setq-default url-configuration-directory &quot;~/.emacs.d/cache/url/&quot;))
-</code></pre>
-<h2 id="theming-presentation">Theming, Presentation</h2>
-<p>This section contains the configuration to change the appearance of Emacs.
-Face-font customizations, color theming, widgets, and other miscellaneous
-changes.</p>
-<pre><code class="language-emacs-lisp">;;; Font Face
-(defvar my/face-font &quot;IBMPlexMono-13&quot;)
-
-;; Ensure that the font is set even when headlessly launched
-(add-hook 'after-make-frame-functions
-          (lambda (frame)
-            (with-selected-frame frame
-              (set-face-font 'default my/face-font))))
-
-(set-face-font 'default my/face-font)
-
-;;; Color Scheme
-(use-package base16-theme
-  :straight t :demand t
-  :config
-  (setq base16-highlight-mode-line 'box)
-  (load-theme 'base16-grayscale-dark t))
-
-;;; Various visual modifications
+<h3 id="framing-and-presentation">Framing &amp; Presentation</h3>
+<pre><code class="language-emacs-lisp">;;; Various visual modifications
 ;; Widgets
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -549,16 +448,45 @@ changes.</p>
 (global-hl-line-mode -1)
 (global-visual-line-mode +1)
 
+;; Fringe
+(setq-default
+ indicate-empty-lines +1
+ indicate-buffer-boundaries +1)
+
+;;; Font Face
+(use-package emacs
+  :init
+  (defun my/set-font ()
+    (set-face-font 'default &quot;GoMono-16&quot;))
+  :config
+  (my/set-font)
+  ;; Ensure that the font is set even when headlessly launched
+  (add-hook 'after-make-frame-functions
+            (lambda (frame)
+              (with-selected-frame frame
+                (my/set-font)))))
+
+;;; Color Scheme
+(use-package base16-theme
+  :straight t :demand t
+  :custom (base16-highlight-mode-line 'box)
+  :config (load-theme 'base16-grayscale-dark t))
+
+(use-package rainbow-mode :straight t)
+
 (use-package paren
   :config
   (show-paren-mode +1)
-  (setq show-paren-style 'expression
-        show-paren-when-point-inside-paren t
-        show-paren-when-point-in-periphery t))
+  :custom
+  (show-paren-style 'expression
+   show-paren-when-point-inside-paren t
+   show-paren-when-point-in-periphery t))
 
-;; Fringe
-(setq-default indicate-empty-lines +1
-              indicate-buffer-boundaries +1)
+;;; Discoverability is supreme
+(use-package which-key
+  :straight t
+  :config
+  (which-key-mode +1))
 
 ;; Mode line delights
 (use-package delight
@@ -572,8 +500,7 @@ changes.</p>
              (eldoc-mode         &quot; 🝗&quot; t)
              (which-key-mode     &quot; ‽&quot; which-key)
              (undo-tree-mode     &quot; 🜶&quot; undo-tree)
-             (company-mode       &quot; 🞋&quot; company)
-             (org-roam-mode      &quot; ⚗&quot; org-roam)
+             (company-mode       nil company)
              (org-src-mode       &quot; 🗈&quot; org-src)
              (org-capture-mode   &quot; 🗅&quot; org-capture)
              (orglink-mode       &quot; ⛓&quot; orglink)
@@ -582,6 +509,8 @@ changes.</p>
              (reftex-mode nil reftex)
              (subword-mode nil t)
              (visual-line-mode nil t))))
+
+;; Enable ANSI Colors
 
 (require 'ansi-color)
 (defun endless/colorize-compilation ()
@@ -593,13 +522,13 @@ changes.</p>
 (add-hook 'compilation-filter-hook
           #'endless/colorize-compilation)
 </code></pre>
-<h2 id="interaction">Interaction</h2>
+<h3 id="commands-and-interaction">Commands &amp; Interaction</h3>
+<p>Changes to Emacs interactions.</p>
 <pre><code class="language-emacs-lisp">(use-package emacs
   :bind ((&quot;C-c v l&quot; . 'visual-line-mode)
          (&quot;C-c v t&quot; . 'toggle-truncate-lines)
          (&quot;&lt;mouse-8&gt;&quot; . 'previous-buffer)
-         (&quot;&lt;mouse-9&gt;&quot; . 'next-buffer)
-         (&quot;&lt;mouse-2&gt;&quot; . 'helm-buffers-list))
+         (&quot;&lt;mouse-9&gt;&quot; . 'next-buffer))
   :config
   (setq display-buffer-alist
         `((&quot;*Help*&quot; display-buffer-same-window))
@@ -611,21 +540,27 @@ changes.</p>
            dired-mode-map
            (&quot;&lt;mouse-2&gt;&quot; . 'dired-mouse-find-file))))
 
-(defun repoman (url)
-  (interactive &quot;Mrepoman &quot;)
-  (async-shell-command (concat &quot;repoman &quot; url) &quot;*Repoman*&quot;))
-(define-key global-map (kbd &quot;C-c g r&quot;) 'repoman)
-</code></pre>
-<h3 id="projectile">Projectile</h3>
-<pre><code class="language-emacs-lisp">(use-package projectile
+;;; Move at the speed of thought
+(use-package avy
+  :straight t
+  :bind ((&quot;C-c c&quot; . 'avy-goto-char-timer)))
+(use-package ace-window
+  :straight t
+  :bind ((&quot;C-x o&quot; . 'ace-window))
+  :config
+  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)
+        aw-scope 'visible))
+
+(use-package expand-region
+  :straight t
+  :bind ((&quot;C-c e&quot; . 'er/expand-region)))
+
+(use-package undo-tree
   :straight t
   :config
-  (projectile-mode +1)
-  (define-key projectile-mode-map (kbd &quot;C-c p&quot;) 'projectile-command-map))
-(use-package helm-projectile
-  :straight t)
+  (global-undo-tree-mode))
 </code></pre>
-<h3 id="helm">Helm</h3>
+<h4 id="commands--helm">Commands (Helm)</h4>
 <pre><code class="language-emacs-lisp">;; Man the helm!
 (use-package helm
   :straight t
@@ -634,22 +569,30 @@ changes.</p>
         helm-quick-update t
         helm-ff-skip-boring-files nil)
   (helm-mode)
-  :bind ((&quot;M-x&quot; . 'helm-M-x)
-         (&quot;C-x C-f&quot; . 'helm-find-files)
-         (&quot;M-s o&quot; . 'helm-occur)
-         (&quot;C-x b&quot; . 'helm-mini)
-         (&quot;C-h a&quot; . 'helm-apropos)
-         (&quot;C-c i &lt;RET&gt;&quot; . 'helm-run-external-command))
+  :bind ((&quot;M-x&quot; . #'helm-M-x)
+         (&quot;M-y&quot; . #'helm-show-kill-ring)
+         (&quot;C-x C-f&quot; . #'helm-find-files)
+         (&quot;C-x r l&quot; . #'bookmark-bmenu-list)
+         (&quot;M-s o&quot; . #'helm-occur)
+         (&quot;C-x b&quot; . #'helm-mini)
+         (&quot;C-h a&quot; . #'helm-apropos)
+         (&quot;C-c i &lt;RET&gt;&quot; . #'helm-run-external-command))
   :custom
   ((helm-allow-mouse t)
    (helm-use-undecorated-frame-option t)
    (helm-display-buffer-reuse-frame t)
    (helm-use-frame-when-mode-than-two-windows t)
-   (helm-use-frame-when-dedicated-window t)
-   (helm-display-function 'helm-display-buffer-in-own-frame)))
+   (helm-use-frame-when-dedicated-window nil)
+   (helm-display-function 'helm-default-display-buffer)
+   (helm-truncate-lines t)))
 </code></pre>
-<h4 id="helm-modules">Helm Modules</h4>
-<pre><code class="language-emacs-lisp">(use-package helm-systemd :straight t)
+<!--list-separator-->
+<ul>
+<li>
+<p>Helm Modules</p>
+<pre><code class="language-emacs-lisp">(use-package helm-projectile :straight t)
+
+(use-package helm-systemd :straight t)
 
 (use-package helm-descbinds :straight t)
 
@@ -688,7 +631,6 @@ changes.</p>
          (&quot;C-M-i&quot; . 'helm-company)))
 
 (use-package helm-dash
-  :demand t
   :straight t
   :bind ((&quot;C-c d d&quot; . 'helm-dash)
          (&quot;C-c d f&quot; . 'helm-dash-at-point)
@@ -711,9 +653,8 @@ changes.</p>
   :bind ((&quot;C-c m b&quot; . 'helm-bibtex))
   :config
   (setq bibtex-dialect 'biblatex
-        bibtex-completion-bibliography (list bibliography-file)
-        bibtex-completion-notes-path research-notes-file
-        bibtex-completion-library-path (list library-directory)))
+        bibtex-completion-bibliography '(&quot;~/org/lib/bibliography.bib&quot;)
+        bibtex-completion-library-path '(&quot;~/org/lib/&quot;)))
 
 (use-package helm-lsp
     :straight t
@@ -725,18 +666,37 @@ changes.</p>
 (use-package helm-clojuredocs
   :straight t)
 </code></pre>
-<h3 id="deft">Deft</h3>
-<pre><code class="language-emacs-lisp">(use-package deft
-  :straight t)
-</code></pre>
-<h3 id="yasnippets">Yasnippets</h3>
-<pre><code class="language-emacs-lisp">(use-package yasnippet
+</li>
+</ul>
+<h3 id="trash-and-garbage">Trash &amp; Garbage</h3>
+<pre><code class="language-emacs-lisp">;;; Friendly GC, should pause less during active use
+
+(use-package gcmh
   :straight t
-  :config (yas-global-mode))
-(use-package yasnippet-snippets
-  :straight t)
+  :config (gcmh-mode +1))
+
+;;; Fewer trash files
+
+(setq backup-directory-alist '((&quot;.&quot; . &quot;~/.emacs.d/cache/backup/&quot;))
+      tramp-backup-directory-alist backup-directory-alist
+      autosave-dir &quot;~/.emacs.d/cache/autosave&quot;
+      auto-save-list-file-prefix autosave-dir
+      auto-save-file-name-transforms `((&quot;.*&quot;  ,autosave-dir t))
+      delete-old-versions t
+      kept-old-versions 1000
+      vc-make-backup-files t
+      version-control t)
+(with-eval-after-load 'request
+  (setq-default request-storage-directory &quot;~/.emacs.d/cache/request/&quot;))
+(with-eval-after-load 'tramp
+  (setq-default tramp-persistency-file-name &quot;~/.emacs.d/cache/tramp.eld&quot;))
+(with-eval-after-load 'url
+  (setq-default url-configuration-directory &quot;~/.emacs.d/cache/url/&quot;))
 </code></pre>
 <h2 id="languages">Languages</h2>
+<h3 id="ledger-mode">Ledger Mode</h3>
+<pre><code class="language-emacs-lisp">(use-package ledger-mode :straight t)
+</code></pre>
 <h3 id="sql-mode">Sql Mode</h3>
 <pre><code class="language-emacs-lisp">(use-package sqlup-mode :straight t)
 </code></pre>
@@ -841,27 +801,78 @@ parenthesis that could be put in its place.</p>
    org-special-ctrl-a/e t
    org-src-tab-acts-natively t
    org-src-window-setup 'current-window))
-</code></pre>
-<h4 id="org-crypt">Org Crypt</h4>
-<pre><code class="language-emacs-lisp">(use-package org-crypt
-  :config
-  (org-crypt-use-before-save-magic)
-  (setq org-tags-exclude-from-inheritance '(&quot;crypt&quot;)
-        org-crypt-key nil)
-  ;; TODO: make this smart about being file local when necessary
-  (setq auto-save-default nil))
 
 (use-package org-contacts
   :after org
   :custom (org-contacts-files `(&quot;~/org/contacts.org&quot;)))
 
-(use-package org-agenda
-  :config
-  (setq
-   org-agenda-files '(&quot;~/org/todo.org&quot; &quot;~/org/calendar.org&quot; &quot;~/org/roam/daily/&quot;)
-   org-agenda-span 'day))
+(use-package org-habit)
 
 (use-package orgtbl-aggregate :straight t)
+</code></pre>
+<h4 id="org-agenda">Org Agenda</h4>
+<pre><code class="language-emacs-lisp">(use-package org-agenda
+  :config
+  (setq
+   org-agenda-files '(&quot;~/org/todo.org&quot; &quot;~/org/calendar.org&quot; &quot;~/org/routine.org&quot; &quot;~/org/roam/daily/&quot;)
+   org-agenda-span 'day))
+(use-package idle-org-agenda
+  :straight t
+  :config (idle-org-agenda-mode +1))
+</code></pre>
+<h4 id="org-babel">Org Babel</h4>
+<p>Org Mode&rsquo;s answer to Jupyter Notebooks in a way. Set up correctly Org Babel can
+make literate programming a breeze, but it does require specific knowledge about
+the peculiar manner Babel integrates Org and the target language. Luckily this
+can be very simple.</p>
+<pre><code class="language-emacs-lisp">;; Rebuilding the Tower of Babel
+(use-package ob-go :straight t)
+(use-package ob-sql-mode :straight t)
+(use-package ob-clojure
+  :custom
+  (org-babel-clojure-backend 'cider))
+(use-package ob-restclient :straight t)
+;; (load &quot;/home/jas/.emacs.d/lisp/ob-echo.el/ob-echo.el&quot;)
+(use-package ob
+  :bind ((&quot;C-c o d&quot; . org-babel-detangle))
+  :config
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t)
+     (sqlite . t)
+     (org . t)
+     (clojure .t)
+     (emacs-lisp . t)
+     (go . t)
+     (python . t)
+     ;; (echo . t)
+     (ledger . t)
+     (restclient . t))))
+(use-package orglink
+  :straight t
+  :custom
+  (orglink-activate-in-modes
+   '(list-data-mode
+     emacs-lisp-mode
+     clojure-mode
+     html-mode
+     css-mode
+     sql-mode
+     yaml-mode
+     dockerfile-mode))
+  :config
+  (global-orglink-mode))
+</code></pre>
+<h4 id="org-bibliography">Org Bibliography</h4>
+<pre><code class="language-emacs-lisp">(use-package org-ref
+  :straight t
+  :after org
+  :config
+  (setq reftex-default-bibliography '(&quot;~/org/lib/bibliography.bib&quot;)
+        org-ref-default-bibliography '(&quot;~/org/lib/bibliography.bib&quot;)
+        org-ref-pdf-directory &quot;~/org/lib/&quot;
+        org-latex-pdf-process
+        '(&quot;latexmk -shell-escape -bibtex -f -pdf %f&quot;)))
 </code></pre>
 <h4 id="org-capture">Org Capture</h4>
 <pre><code class="language-emacs-lisp">(use-package org-capture
@@ -895,252 +906,71 @@ parenthesis that could be put in its place.</p>
            &quot;**** [[%x][%^{Channel Name}]]&quot;
            :prepend t :immediate-finish t))))
 </code></pre>
-<h4 id="org-babel">Org Babel</h4>
-<p>Org Mode&rsquo;s answer to Jupyter Notebooks in a way. Set up correctly Org Babel can
-make literate programming a breeze, but it does require specific knowledge about
-the peculiar manner Babel integrates Org and the target language. Luckily this
-can be very simple.</p>
-<pre><code class="language-emacs-lisp">;; Rebuilding the Tower of Babel
-(use-package ob-go :straight t)
-(use-package ob-sql-mode :straight t)
-(use-package ob-clojure
-  :custom
-  (org-babel-clojure-backend 'cider))
-(use-package ob-restclient :straight t)
-;; (load &quot;/home/jas/.emacs.d/lisp/ob-echo.el/ob-echo.el&quot;)
-(use-package ob
-  :bind ((&quot;C-c o d&quot; . org-babel-detangle))
+<h4 id="org-crypt">Org Crypt</h4>
+<pre><code class="language-emacs-lisp">(use-package org-crypt
   :config
-  (org-babel-do-load-languages
-   'org-babel-load-languages
-   '((shell . t)
-     (sqlite . t)
-     (org . t)
-     (clojure .t)
-     (emacs-lisp . t)
-     (go . t)
-     (python . t)
-     ;; (echo . t)
-     (restclient . t)))
-  )
-(use-package orglink
-  :straight t
-  :custom
-  (orglink-activate-in-modes
-   '(emacs-lisp-mode clojure-mode html-mode css-mode sql-mode yaml-mode dockerfile-mode))
-  :config
-  (global-orglink-mode))
+  (org-crypt-use-before-save-magic)
+  (setq org-tags-exclude-from-inheritance '(&quot;crypt&quot;)
+        org-crypt-key nil)
+  ;; TODO: make this smart about being file local when necessary
+  (setq auto-save-default nil))
 </code></pre>
 <h4 id="org-roam">Org Roam</h4>
 <p>A particular manner of note-taking based off of Zettelkasten. In another manner,
 a super-powered Org Capture, but the magic of it comes from keeping it small and
 linking manually and often. Then a web of concepts can be generated.</p>
 <pre><code class="language-emacs-lisp">(use-package org-roam
-  :straight t
-  :bind
-  ((&quot;C-c o r c&quot; . 'org-roam-capture)
-   (&quot;C-c o r f&quot; . 'org-roam-find-file)
-   (&quot;C-c o r i&quot; . 'org-roam-insert)     ;inserts link to an org-roam file
-   (&quot;C-c o r &lt;RET&gt;&quot; . 'org-roam-jump-to-index)
-   (&quot;C-c o r u&quot; . 'org-roam-db-build-cache)
-   (&quot;C-c o r d d&quot; . 'org-roam-dailies-capture-today)
-   (&quot;C-c o r d &lt;RET&gt;&quot; . 'org-roam-dailies-find-directory)
-   (&quot;C-c o r d c&quot; . 'org-roam-dailies-capture-date))
-  :config
-  (require 'org-protocol)
-  (require 'org-roam-protocol)
-  (add-hook 'after-init-hook 'org-roam-mode)
-  (setq org-roam-directory &quot;~/org/roam/&quot;
-        org-roam-capture-templates
-        '((&quot;d&quot; &quot;default&quot; plain #'org-roam-capture--get-point &quot;%?&quot; :file-name &quot;%&lt;%Y%m%d%H%M%S&gt;-${slug}&quot; :head &quot;#+title: ${title}
-&quot; :unnarrowed t))
-        org-roam-capture-ref-templates
-        '((&quot;r&quot; &quot;ref&quot; plain #'org-roam-capture--get-point &quot;%?&quot;
-           :file-name &quot;%&lt;%Y%m%d%H%M%S&gt;-${slug}&quot; :head &quot;#+title: ${title}\n#+roam_tags: inbox\n#+roam_key: ${ref}&quot; :unnarrowed t :immediate-finish t)
-          (&quot;j&quot; &quot;job&quot; plain #'org-roam-capture--get-point &quot;%?&quot;
-           :file-name &quot;%&lt;%Y%m%d%H%M%S&gt;-${slug}&quot; :head &quot;#+title: ${title}\n#+roam_tags: job listing\n#+roam_key: ${ref}&quot; :unnarrowed t :immediate-finish t))
-        org-roam-dailies-capture-templates
-        '((&quot;d&quot; &quot;default&quot; entry (function org-roam-capture--get-point)
-           &quot;* %&lt;%H:%M&gt; %?&quot;
-           :file-name &quot;daily/%&lt;%Y-%m-%d&gt;&quot;
-           :head &quot;#+title: %&lt;%Y-%m-%d&gt;\n&quot;))
-        org-archive-location &quot;~/org/archive.org::&quot;)
-  ;; PATCH Google Chrome
-  ;; (load-file &quot;~/.emacs.d/lisp/+org-protocol-check-filename-for-protocol.el&quot;)
-  ;; (advice-add 'org-protocol-check-filename-for-protocol :override '+org-protocol-check-filename-for-protocol)
-  )
-
-(use-package org-roam-server
+  :demand t
   :straight t
   :config
-  (setq org-roam-server-host &quot;127.0.0.1&quot;
-        orgr-roam-server-port 5643
-        org-roam-server-authenticate t
-        org-roam-server-export-inline-images t
-        org-roam-server-served-file-extensions '(&quot;pdf&quot; &quot;mp4&quot;)
-        org-roam-server-network-poll t
-        org-roam-server-network-arrows nil
-        org-roam-server-network-label-truncate-length 60
-        org-roam-server-network-label-wrap-length 20))
-
-(use-package org-capture-ref
-  :straight (org-capture-ref
-             :type git :host github :repo &quot;yantar92/org-capture-ref&quot;
-             :fork (:host github :repo &quot;jasbrg/org-capture-ref&quot;)))
-
-(use-package org-roam-bibtex
-  :straight t
-  :config (setq orb-templates '((&quot;r&quot; &quot;ref&quot; plain #'org-roam-capture--get-point &quot;&quot; :file-name &quot;${citekey}&quot; :head &quot;#+title: ${title}\n#+roam_key: ${ref}\n&quot; :unnarrowed t)))
-  :hook (org-roam-mode . org-roam-bibtex-mode))
+  (setq
+   org-roam-directory &quot;~/org/roam/&quot;
+   org-roam-dailies-directory &quot;~/org/roam/daily&quot;
+   org-roam-dailies-capture-templates
+   '((&quot;d&quot; &quot;default&quot; entry &quot;* %&lt;%H:%M&gt; %?&quot; :if-new
+  (file+head &quot;/home/jas/org/roam/daily/%&lt;%Y-%m-%d&gt;.org&quot; &quot;#+title: %&lt;%Y-%m-%d&gt;
+&quot;))))
+  :bind ((&quot;C-c r b&quot; . #'org-roam-buffer-toggle)
+         (&quot;C-c r i&quot; . #'org-roam-node-insert)
+         (&quot;C-c r s&quot; . #'org-roam-db-sync)
+         (&quot;C-c r a r&quot; . #'org-roam-ref-add)
+         (&quot;C-c r a t&quot; . #'org-roam-tag-add)
+         (&quot;C-c r a a&quot; . #'org-roam-alias-add)
+         ;; Capture
+         (&quot;C-c r c c&quot; . #'org-roam-capture)
+         (&quot;C-c r c d&quot; . #'org-roam-dailies-capture-today)
+         (&quot;C-c r c p&quot; . #'org-roam-dailies-capture-yesterday)
+         (&quot;C-c r c n&quot; . #'org-roam-dailies-capture-tomorrow)
+         (&quot;C-c r c f&quot; . #'org-roam-dailies-capture-date)
+         ;; Recall
+         (&quot;C-c r f&quot; . #'org-roam-node-find)
+         (&quot;C-c r d&quot; . #'org-roam-dailies-map))
+  :config
+  (org-roam-setup)
+  (use-package org-roam-protocol))
 </code></pre>
-<h4 id="org-bibliography">Org Bibliography</h4>
-<pre><code class="language-emacs-lisp">(use-package org-ref
-  :straight t
-  :config
-  (setq reftex-default-bibliography (list bibliography-file)
-        org-ref-default-bibliography (list bibliography-file)
-        org-ref-bibliography-notes research-notes-file
-        org-ref-pdf-directory library-directory
-        org-latex-pdf-process
-        '(&quot;latexmk -shell-escape -bibtex -f -pdf %f&quot;)))
+<h4 id="org-xournalpp">Org Xournalpp</h4>
+<pre><code class="language-emacs-lisp">(use-package org-xournalpp
+  :straight (org-xournalpp
+             :type git :host gitlab
+             :repo &quot;vherrmann/org-xournalpp&quot;
+             :files (&quot;resources&quot; &quot;*.el&quot;))
+  :config (add-hook 'org-mode-hook 'org-xournalpp-mode))
 </code></pre>
 <h2 id="features">Features</h2>
-<h3 id="minor-modes">Minor Modes</h3>
-<p>Features which may integrate into many modes.</p>
-<pre><code class="language-emacs-lisp">(use-package eldoc)
-
-(add-hook 'text-mode-hook 'electric-pair-mode)
-
-;;; Discoverability is supreme
-(use-package which-key
+<h3 id="project-management">Project Management</h3>
+<pre><code class="language-emacs-lisp">(use-package projectile
   :straight t
   :config
-  (which-key-mode +1))
+  (projectile-mode +1)
+  (define-key projectile-mode-map (kbd &quot;C-c p&quot;) 'projectile-command-map))
 
-;;; Move at the speed of thought
-(use-package avy
-  :straight t
-  :bind ((&quot;C-c c&quot; . 'avy-goto-char-timer)))
-(use-package ace-window
-  :straight t
-  :bind ((&quot;C-x o&quot; . 'ace-window))
-  :config
-  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)
-        aw-scope 'visible))
-
-;;; Open your eyes wide
-(use-package expand-region
-  :straight t
-  :bind ((&quot;C-c e&quot; . 'er/expand-region)))
-
-;; Taste the rainbow
-(use-package rainbow-mode :straight t)
-
-;; Some choices are more permanent than others
-(use-package undo-tree
-  :straight t
-  :config
-  (global-undo-tree-mode))
-</code></pre>
-<h4 id="company-completion">Company Completion</h4>
-<pre><code class="language-emacs-lisp">(use-package company
-  :straight t
-  :config
-  (add-hook 'prog-mode-hook 'company-mode))
-</code></pre>
-<h4 id="language-server-protocol">Language Server Protocol</h4>
-<!--list-separator-->
-<ul>
-<li>
-<p>Dap Mode</p>
-<pre><code class="language-emacs-lisp">(use-package dap-mode
-  :straight t
-  :after (lsp-mode)
-  :functions dap-hydra/nil
-  :config
-  :bind (:map lsp-mode-map
-              (&quot;&lt;f5&gt;&quot; . dap-debug)
-              (&quot;M-&lt;f5&gt;&quot; . dap-hydra))
-  :hook ((dap-mode . dap-ui-mode)
-         (dap-session-created . (lambda (&amp;_rest) (dap-hydra)))
-         (dap-terminataed . (lambda (&amp;_rest) (dap-hydra/nil)))))
-
-(use-package dap-java :after dap-mode)
-</code></pre>
-</li>
-</ul>
-<!--list-separator-->
-<ul>
-<li>
-<p>LSP Mode</p>
-<pre><code class="language-emacs-lisp">(use-package lsp-ui
-  :straight t
-  :after (lsp-mode)
-  :bind (:map lsp-ui-mode-map
-              ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-              ([remap xref-find-references] . lsp-ui-peek-find-references))
-  :init
-  (setq lsp-ui-doc-delay 1.5
-        lsp-ui-doc-position 'bottom
-        lsp-ui-doc-max-width 100))
-(use-package lsp-mode
-  :straight t
-  :hook ((lsp-mode . lsp-enable-which-key-integration)
-         (java-mode . #'lsp-deferred))
-
-  :init
-  (setq
-   lsp-keymap-prefix &quot;C-c l&quot;
-   lsp-enable-file-watchers nil
-   read-process-output-max (* 1024 1024)
-   lsp-completion-provider :capf
-   lsp-idle-delay 0.5)
-  :config
-  (define-key lsp-mode-map (kbd &quot;C-c l&quot;) lsp-command-map))
-(use-package lsp-java
-  :straight t
-  :config (add-hook 'java-mode-hook 'lsp))
-</code></pre>
-</li>
-</ul>
-<!--list-separator-->
-<ul>
-<li>
-<p>Eglot</p>
-<pre><code class="language-emacs-lisp">(use-package eglot :straight t)
-
-(setq-default eglot-workspace-configuration
-              '((:gopls .
-                        ((staticcheck . t)
-                         (matcher . &quot;CaseSensitive&quot;)))))
-</code></pre>
-</li>
-</ul>
-<h3 id="docker-podman">Docker/Podman</h3>
-<pre><code class="language-emacs-lisp">(use-package docker :straight t)
-(use-package docker-compose-mode :straight t)
-(use-package dockerfile-mode
-  :straight t
-  :config
-  (defalias 'containerfile-mode 'dockerfile-mode))
-</code></pre>
-<h3 id="browser">Browser</h3>
-<pre><code class="language-emacs-lisp">(use-package elpher :straight t)
-</code></pre>
-<h3 id="dictionary">Dictionary</h3>
-<pre><code class="language-emacs-lisp">;; Dictionary.el
-(use-package dictionary
-  :bind ((&quot;C-c d s&quot; . 'dictionary-lookup-definition))
-  :custom
-  (dictionary-server &quot;dict.org&quot;))
-</code></pre>
-<h3 id="quick-navigation">Quick Navigation</h3>
-<pre><code class="language-emacs-lisp">(use-package treemacs
+(use-package treemacs
   :straight t
   :bind ((&quot;C-c t &lt;RET&gt;&quot; . 'treemacs)
          (&quot;C-c t t&quot; . 'treemacs-select-window)))
 </code></pre>
-<h3 id="version-control">Version Control</h3>
+<h4 id="version-control">Version Control</h4>
 <pre><code class="language-emacs-lisp">;; The world’s finest porcelain
 (use-package magit
   :straight t
@@ -1149,6 +979,23 @@ linking manually and often. Then a web of concepts can be generated.</p>
 
 ;; It’s dangerous to go alone
 (use-package forge :straight t)
+</code></pre>
+<h3 id="document-viewer">Document Viewer</h3>
+<pre><code class="language-emacs-lisp">(use-package pdf-tools
+  :straight t
+  :custom
+  pdf-view-midnight-colors '(&quot;#b9b9b9&quot; . &quot;#101010&quot;))
+</code></pre>
+<h3 id="browser">Browser</h3>
+<pre><code class="language-emacs-lisp">(use-package elpher :straight t)
+</code></pre>
+<h3 id="dictionary">Dictionary</h3>
+<pre><code class="language-emacs-lisp">;; Dictionary.el
+(use-package dictionary
+  :bind ((&quot;C-c d s&quot; . 'dictionary-lookup-definition)
+         (&quot;C-c d S&quot; . 'dictionary-search))
+  :custom
+  (dictionary-server &quot;dict.org&quot;))
 </code></pre>
 <h3 id="media">Media</h3>
 <h4 id="ox-easy-hugo">Ox/Easy/Hugo</h4>
@@ -1186,13 +1033,25 @@ linking manually and often. Then a web of concepts can be generated.</p>
   :bind ((&quot;C-c m m&quot; . 'notmuch))
   :config
   (require 'ol-notmuch)
-  (setq notmuch-search-oldest-first nil
+  (setq notmuch-show-hook (lambda () (toggle-truncate-lines +1))
+        notmuch-search-hook (lambda () (toggle-truncate-lines +1))
+        notmuch-search-oldest-first nil
+        notmuch-tag-jump-reverse-key &quot;k&quot;
         notmuch-tagging-keys
         '((&quot;a&quot; notmuch-archive-tags &quot;Archive&quot;)
           (&quot;r&quot; notmuch-show-mark-read-tags &quot;Mark read&quot;)
           (&quot;f&quot; (&quot;+flagged&quot;) &quot;Flag&quot;)
           (&quot;s&quot; (&quot;+spam&quot; &quot;-inbox&quot;) &quot;Mark as spam&quot;)
-          (&quot;d&quot; (&quot;+deleted&quot; &quot;-inbox&quot;) &quot;Delete&quot;))))
+          (&quot;d&quot; (&quot;+deleted&quot; &quot;-inbox&quot;) &quot;Delete&quot;)
+          (&quot;R&quot; (&quot;-inbox&quot; &quot;+receipt&quot;) &quot;Mark receipt&quot;)
+          (&quot;n&quot; (&quot;-inbox&quot; &quot;+newsletter&quot;) &quot;Archive newsletter&quot;)
+          (&quot;N&quot; (&quot;-inbox&quot; &quot;+notification&quot;) &quot;Archive notification&quot;))))
+
+(use-package notmuch-bookmarks
+  :straight t
+  :after notmuch
+  :config
+  (notmuch-bookmarks-mode))
 </code></pre>
 <h4 id="elfeed">Elfeed</h4>
 <pre><code class="language-emacs-lisp">(use-package elfeed
@@ -1251,9 +1110,7 @@ some way to only download limited # at a time, queuing rest?</li>
         ytdl-media-player &quot;mpv&quot;))
 </code></pre>
 <h3 id="password-manager">Password Manager</h3>
-<pre><code class="language-emacs-lisp">;; Password manager
-(use-package password-store
-  :straight t)
+<pre><code class="language-emacs-lisp">(use-package password-store :straight t)
 </code></pre>
 <h3 id="shell">Shell</h3>
 <pre><code class="language-emacs-lisp">(use-package vterm :straight t)
@@ -1266,23 +1123,73 @@ some way to only download limited # at a time, queuing rest?</li>
              (abbreviate-file-name (eshell/pwd))
              (if (= (user-uid)  0) &quot;] # &quot; &quot;] $ &quot;)))))
 </code></pre>
-<h3 id="wolfram">Wolfram</h3>
-<p>I&rsquo;d like to develop this into an org-babel language, to query WolframAlpha and
-DWIM insert it into buffer in org-literate way. Org-mode is the ultimate for
-computational journals, integrating computational intelligence is a natural
-extension.</p>
-<pre><code class="language-emacs-lisp">(use-package wolfram
+<h3 id="snippets">Snippets</h3>
+<pre><code class="language-emacs-lisp">(use-package yasnippet
   :straight t
-  :config
-  (setq
-   wolfram-alpha-app-id (my/secret 'wolfram-alpha-app-id)
-   wolfram-alpha-magnification-factor 1.2))
+  :config (yas-global-mode))
+(use-package yasnippet-snippets
+  :straight t)
 </code></pre>
-<h2 id="init-spirations">Init-spirations</h2>
-<h3 id="sacha-chua">Sacha Chua</h3>
-<h3 id="jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></h3>
-<h3 id="valignatev"><a href="https://github.com/valignatev/dotfiles/blob/literate-config/.emacs.d/config.org">valignatev</a></h3>
-<h3 id="joseph8th"><a href="https://github.com/joseph8th/literatemacs">joseph8th</a></h3>
+<h2 id="appendix">Appendix</h2>
+<h3 id="glossary">Glossary</h3>
+<p>Wherein definitions are explicated.</p>
+<pre><code class="language-emacs-lisp">;; Leave yourself a way home
+(defun my/find-init ()
+  (interactive)
+  (find-file &quot;~/org/init.org&quot;))
+(global-set-key (kbd &quot;C-c o i&quot;) 'my/find-init)
+
+;; Mischief Managed
+(defun my/secret (sym) nil)
+(load &quot;secrets.el&quot;)
+
+(defvar library-directory &quot;~/org/lib/&quot;)
+(defvar bibliography-file &quot;~/org/lib/bibliography.bib&quot;)
+
+(setq calendar-longitude -90
+      calendar-latitude 43)
+
+(setq-default
+ cursor-type 'box
+ custom-file &quot;~/.emacs.d/custom.el&quot;
+ fill-column 80
+ help-window-select t
+ indent-tabs-mode nil
+ inhibit-startup-screen t
+ initial-scratch-message &quot;&quot;
+ dired-listing-switches &quot;-alhF&quot;
+ scroll-conservatively  70
+ mouse-wheel-progressive-speed nil
+ scroll-margin 0
+ sentence-end-double-space nil
+ uniquify-buffer-name-style 'forward
+ tab-width 4
+ browse-url-browser-function 'eww-browse-url)
+(fset 'yes-or-no-p 'y-or-n-p)           ;Lazy y/n
+(global-subword-mode 1)                 ;They're CamelCase'd for a reason
+(column-number-mode 1)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(set-default-coding-systems 'utf-8)
+
+;; Quickly clone according to the URL
+(defun repoman (url)
+  (interactive &quot;Mrepoman &quot;)
+  (async-shell-command (concat &quot;repoman &quot; url) &quot;*Repoman*&quot;))
+(define-key global-map (kbd &quot;C-c g r&quot;) 'repoman)
+</code></pre>
+<h3 id="bibliography">Bibliography</h3>
+<h4 id="sacha-chua"><a href="https://pages.sachachua.com/.emacs.d/Sacha.html">Sacha Chua</a></h4>
+<h4 id="jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></h4>
+<h4 id="valignatev"><a href="https://github.com/valignatev/dotfiles/blob/literate-config/.emacs.d/config.org">valignatev</a></h4>
+<h4 id="joseph8th"><a href="https://github.com/joseph8th/literatemacs">joseph8th</a></h4>
+<h4 id="jamie-collinson"><a href="https://jamiecollinson.com/blog/my-emacs-config/">Jamie Collinson</a></h4>
+<h4 id="jordanbiondo"><a href="https://github.com/jordonbiondo/.emacs.d">jordanbiondo</a></h4>
+<h4 id="norman-walsh"><a href="https://so.nwalsh.com/2020/02/29/dot-emacs">Norman Walsh</a></h4>
+<h4 id="matthewzmd"><a href="https://github.com/MatthewZMD/.emacs.d">MatthewZMD</a></h4>
+<h4 id="musa-al-hassy"><a href="https://github.com/alhassy/emacs.d">Musa al-Hassy</a></h4>
+<h4 id="steve-purcell"><a href="https://github.com/purcell/emacs.d">Steve Purcell</a></h4>
+<h4 id="bernt-hansen"><a href="http://doc.norang.ca/org-mode.html">Bernt Hansen</a></h4>
 
   </main>
 

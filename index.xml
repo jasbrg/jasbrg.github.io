@@ -10,12 +10,11 @@
     <item>
       <title>Dot Emacs</title>
       <link>https://jasbrg.github.io/init-el/</link>
-      <pubDate>Mon, 22 Mar 2021 14:20:26 -0500</pubDate>
+      <pubDate>Fri, 28 May 2021 23:46:58 -0500</pubDate>
       
       <guid>https://jasbrg.github.io/init-el/</guid>
-      <description>;;; start of init.el  Prologue  The Tao begot one. One begot two. Two begot three. And three begot the ten thousand things.
-&amp;ndash; Tao Te Ching - Laozi - chapter 42, On the topic of CAR and CDR
- ;; Leave yourself a way home (defun my/find-init () (interactive) (find-file &amp;quot;~/.emacs.d/init.org&amp;quot;)) (global-set-key (kbd &amp;quot;C-c o i&amp;quot;) &#39;my/find-init)  A literate approach to configuration gives it a more personal taste.</description>
+      <description>Preface Here are configurations which benefit from coming before the rest.
+;;; start of early-init.el (setq gc-cons-threshold most-positive-fixnum gc-cons-percentage 0.6 package-enable-at-startup nil) (add-hook &#39;emacs-startup-hook (lambda () (setq gc-cons-threshold (* 16 1024 1024) gc-cons-percentage 0.1))) ;;; end of early-init.el  Introduction Packaging ;;; start of init.el ;;; package.el setup (require &#39;package) (package-initialize) (setq package-archives &#39;((&amp;quot;gnu&amp;quot; . &amp;quot;https://elpa.gnu.org/packages/&amp;quot;) (&amp;quot;melpa&amp;quot; . &amp;quot;https://melpa.org/packages/&amp;quot;))) ;;; straight.el setup (defvar bootstrap-version) (let ((bootstrap-file (expand-file-name &amp;quot;straight/repos/straight.el/bootstrap.el&amp;quot; user-emacs-directory)) (bootstrap-version 5)) (unless (file-exists-p bootstrap-file) (with-current-buffer (url-retrieve-synchronously &amp;quot;https://raw.</description>
     </item>
     
     <item>
