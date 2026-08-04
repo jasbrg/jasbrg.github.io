@@ -6,6 +6,20 @@
 <description>Jotbooks</description>
 <atom:link href="https://jasbrg.com/jotbooks/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>5</title>
+<link>https://jasbrg.com/jotbooks/5/index.html</link>
+<guid>https://jasbrg.com/jotbooks/5/index.html</guid>
+<pubDate>Tue, 04 Aug 2026 12:00:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/5/img/5-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+<item>
+<title>4</title>
+<link>https://jasbrg.com/jotbooks/4/index.html</link>
+<guid>https://jasbrg.com/jotbooks/4/index.html</guid>
+<pubDate>Tue, 04 Aug 2026 12:00:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/4/img/4-thumb-1.jpg&quot;/&gt;2 pages</description>
+</item>
+<item>
 <title>end of session 1</title>
 <link>https://jasbrg.com/jotbooks/3/index.html</link>
 <guid isPermaLink="false">urn:uuid:A76C1ED3-AE07-448C-998A-1BB5EB5E3E22</guid>
