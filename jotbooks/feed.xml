@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Jotbooks</title>
+<link>https://jasbrg.com/jotbooks/index.html</link>
+<description>Jotbooks</description>
+<atom:link href="https://jasbrg.com/jotbooks/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>2</title>
+<link>https://jasbrg.com/jotbooks/2/index.html</link>
+<guid>https://jasbrg.com/jotbooks/2/index.html</guid>
+<pubDate>Mon, 03 Aug 2026 12:00:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/2/img/2-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+<item>
+<title>The first jotbook</title>
+<link>https://jasbrg.com/jotbooks/1/index.html</link>
+<guid isPermaLink="false">urn:uuid:E09B5CF7-8522-4949-BA5B-844E42C27420</guid>
+<pubDate>Mon, 03 Aug 2026 12:00:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/1/img/1-thumb-1.jpg&quot;/&gt;I read something about this being a thing Henry Ford did after reading some
+article about yet another knowledge system.  Just write shit.
+
+But another part of me wants to build (have) a continuous integration pipeline,
+so here we are.</description>
+</item>
+</channel>
+</rss>
