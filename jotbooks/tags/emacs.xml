@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Jotbooks — tag: emacs</title>
-<link>https://jasbrg.com/jotbooks/index.html</link>
+<link>https://jasbrg.com/jotbooks/tags/index.html</link>
 <description>Jotbooks — tag: emacs</description>
 <atom:link href="https://jasbrg.com/jotbooks/tags/emacs.xml" rel="self" type="application/rss+xml"/>
 <item>
