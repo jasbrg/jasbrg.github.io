@@ -6,6 +6,13 @@
 <description>Jotbooks</description>
 <atom:link href="https://jasbrg.com/jotbooks/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>mugshot</title>
+<link>https://jasbrg.com/jotbooks/analog/mugshot/index.html</link>
+<guid>https://jasbrg.com/jotbooks/analog/mugshot/index.html</guid>
+<pubDate>Tue, 04 Aug 2026 12:00:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/analog/mugshot/img/mugshot-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+<item>
 <title>mug</title>
 <link>https://jasbrg.com/jotbooks/analog/mug/index.html</link>
 <guid isPermaLink="false">urn:uuid:39201DB2-F772-460F-805D-6607E685C7E5</guid>
