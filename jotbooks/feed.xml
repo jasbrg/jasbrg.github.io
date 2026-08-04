@@ -12,7 +12,11 @@
 <pubDate>Tue, 04 Aug 2026 11:55:00 -0400</pubDate>
 <description>&lt;img src=&quot;https://jasbrg.com/jotbooks/6/img/6-thumb-1.jpg&quot;/&gt;this *should* be placed after mugshot in the top level index because it was
 created afterwards, so the top level index faithfully represents the linear flow
-of creation.  but is not under the current scheme as of =bc7afc3=</description>
+of creation.  but is not under the current scheme as of
+=jasbrg/.emacs.d@bc7afc3=
+
+
+fixed with =jasbrg/.emacs.d@7087514=, I hope.</description>
 </item>
 <item>
 <title>mugshot</title>
