@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Jotbooks — tag: emacs</title>
+<link>https://jasbrg.com/jotbooks/index.html</link>
+<description>Jotbooks — tag: emacs</description>
+<atom:link href="https://jasbrg.com/jotbooks/tags/emacs.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>5</title>
+<link>https://jasbrg.com/jotbooks/5/index.html</link>
+<guid isPermaLink="false">urn:uuid:2AB6CA97-87DC-4C9B-86DB-74CBB5AEE5A7</guid>
+<pubDate>Tue, 04 Aug 2026 12:00:00 -0400</pubDate>
+<category>emacs</category>
+<category>pipeline</category>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/5/img/5-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+</channel>
+</rss>
