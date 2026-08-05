@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Jotbooks — tag: pipeline</title>
-<link>https://jasbrg.com/jotbooks/tags/index.html</link>
+<link>https://jasbrg.com/tags/index.html</link>
 <description>Jotbooks — tag: pipeline</description>
-<atom:link href="https://jasbrg.com/jotbooks/tags/pipeline.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://jasbrg.com/tags/pipeline.xml" rel="self" type="application/rss+xml"/>
 <item>
 <title>6</title>
 <link>https://jasbrg.com/jotbooks/6/index.html</link>
@@ -31,6 +31,15 @@ public, but it seems to have been fixed.</description>
 <category>emacs</category>
 <category>pipeline</category>
 <description>&lt;img src=&quot;https://jasbrg.com/jotbooks/5/img/5-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+<item>
+<title>Continuous Integration Pipelines</title>
+<link>https://jasbrg.com/nodes/continuous-integration-pipelines.html</link>
+<guid isPermaLink="false">urn:uuid:7AA80F65-C119-45AC-82DF-FB5FC3BE90E5</guid>
+<pubDate>Tue, 04 Aug 2026 00:40:00 -0400</pubDate>
+<category>pipeline</category>
+<description>They're a fun toy to have.  If you can tame multiple sources of truth,
+especially so.  That would facilitate iteration!  Iteration is recursion!</description>
 </item>
 </channel>
 </rss>

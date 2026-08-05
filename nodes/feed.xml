@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Nodes</title>
+<link>https://jasbrg.com/nodes/index.html</link>
+<description>Nodes</description>
+<atom:link href="https://jasbrg.com/nodes/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>[2026-08-04 Tue 23:17]</title>
+<link>https://jasbrg.com/nodes/2026-08-04-tue-23-17.html</link>
+<guid isPermaLink="false">urn:uuid:98572556-E4FB-4C01-AD6E-1CD28E215DF9</guid>
+<pubDate>Tue, 04 Aug 2026 23:20:00 -0400</pubDate>
+<description>so now i've got a way to drop nodes quickly that get pushed up to a public place
+in a few keystrokes</description>
+</item>
+<item>
+<title>[2026-08-04 Tue 22:44]</title>
+<link>https://jasbrg.com/nodes/2026-08-04-tue-22-44.html</link>
+<guid isPermaLink="false">urn:uuid:26420D9C-30C7-463A-8F95-4EE28F9E917B</guid>
+<pubDate>Tue, 04 Aug 2026 22:44:00 -0400</pubDate>
+<description>Let's take another look at publishing</description>
+</item>
+<item>
+<title>6</title>
+<link>https://jasbrg.com/jotbooks/6/index.html</link>
+<guid isPermaLink="false">urn:uuid:B3412CC4-4B1F-4409-9096-8F31819A5537</guid>
+<pubDate>Tue, 04 Aug 2026 11:55:00 -0400</pubDate>
+<category>pipeline</category>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/6/img/6-thumb-1.jpg&quot;/&gt;this *should* be placed after mugshot in the top level index because it was
+created afterwards, so the top level index faithfully represents the linear flow
+of creation.  but is not under the current scheme as of
+=jasbrg/.emacs.d@bc7afc3=
+
+
+fixed with =jasbrg/.emacs.d@7087514=, I hope.
+
+
+well, i squashed my git history so these references won't make sense to the
+public, but it seems to have been fixed.</description>
+</item>
+<item>
+<title>mugshot</title>
+<link>https://jasbrg.com/jotbooks/analog/mugshot/index.html</link>
+<guid isPermaLink="false">urn:uuid:7996F6D3-20C2-4A09-A42B-B0DDF294895E</guid>
+<pubDate>Tue, 04 Aug 2026 09:30:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/analog/mugshot/img/mugshot-thumb-1.jpg&quot;/&gt;my speedster roommate</description>
+</item>
+<item>
+<title>mug</title>
+<link>https://jasbrg.com/jotbooks/analog/mug/index.html</link>
+<guid isPermaLink="false">urn:uuid:39201DB2-F772-460F-805D-6607E685C7E5</guid>
+<pubDate>Tue, 04 Aug 2026 08:46:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/analog/mug/img/mug-thumb-1.jpg&quot;/&gt;is this a document?</description>
+</item>
+<item>
+<title>5</title>
+<link>https://jasbrg.com/jotbooks/5/index.html</link>
+<guid isPermaLink="false">urn:uuid:2AB6CA97-87DC-4C9B-86DB-74CBB5AEE5A7</guid>
+<pubDate>Tue, 04 Aug 2026 08:27:00 -0400</pubDate>
+<category>emacs</category>
+<category>pipeline</category>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/5/img/5-thumb-1.jpg&quot;/&gt;1 pages</description>
+</item>
+<item>
+<title>end of session 1</title>
+<link>https://jasbrg.com/jotbooks/3/index.html</link>
+<guid isPermaLink="false">urn:uuid:A76C1ED3-AE07-448C-998A-1BB5EB5E3E22</guid>
+<pubDate>Tue, 04 Aug 2026 01:30:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/3/img/3-thumb-1.jpg&quot;/&gt;okay so we do skip the metadata when going between books.  i think that's right?</description>
+</item>
+<item>
+<title>2</title>
+<link>https://jasbrg.com/jotbooks/2/index.html</link>
+<guid isPermaLink="false">urn:uuid:27F20E16-FE07-4EF1-B18B-9ABFA7DCC92A</guid>
+<pubDate>Tue, 04 Aug 2026 01:27:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/2/img/2-thumb-1.jpg&quot;/&gt;moving along... how does thing sort it?</description>
+</item>
+<item>
+<title>Continuous Integration Pipelines</title>
+<link>https://jasbrg.com/nodes/continuous-integration-pipelines.html</link>
+<guid isPermaLink="false">urn:uuid:7AA80F65-C119-45AC-82DF-FB5FC3BE90E5</guid>
+<pubDate>Tue, 04 Aug 2026 00:40:00 -0400</pubDate>
+<category>pipeline</category>
+<description>They're a fun toy to have.  If you can tame multiple sources of truth,
+especially so.  That would facilitate iteration!  Iteration is recursion!</description>
+</item>
+<item>
+<title>The first jotbook</title>
+<link>https://jasbrg.com/jotbooks/1/index.html</link>
+<guid isPermaLink="false">urn:uuid:E09B5CF7-8522-4949-BA5B-844E42C27420</guid>
+<pubDate>Mon, 03 Aug 2026 23:07:00 -0400</pubDate>
+<description>&lt;img src=&quot;https://jasbrg.com/jotbooks/1/img/1-thumb-1.jpg&quot;/&gt;I read something about this being a thing Henry Ford did after reading some
+article about yet another knowledge system.  Just write shit.
+
+But another part of me wants to build (have) a continuous integration pipeline,
+so here we are.</description>
+</item>
+</channel>
+</rss>
